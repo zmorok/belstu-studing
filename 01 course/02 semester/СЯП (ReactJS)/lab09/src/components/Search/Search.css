@@ -1,0 +1,68 @@
+@import url('../fonts.css');
+
+/* Search */
+
+.search-content {
+  width: 95%;
+}
+
+.search-content h1 {
+  text-align: center;
+  font-family: 'Montserrat';
+  line-height: 0.3;
+  margin-bottom: 0;
+}
+
+.search-container {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.search-input {
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.search-select {
+  width: 18%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.search-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.search-table th,
+.search-table td {
+  padding: 5px;
+  border: 1px solid #999999;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.search-table tbody tr {
+  height: 10vh;
+}
+
+.search-table th {
+  font-weight: bold;
+}
+
+.search-table tr:hover {
+  background-color: #ddd;
+}
+
+.search-table td:hover {
+  background-color: #fff;
+}

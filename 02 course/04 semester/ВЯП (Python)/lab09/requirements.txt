@@ -1,0 +1,12 @@
+# core
+numpy>=1.23
+pillow>=10.0
+matplotlib>=3.8
+
+# NLP и обработка текста
+nltk>=3.8
+pymorphy2>=0.9.1
+pymorphy2-dicts-ru>=2.4.417127.4579844     # словари для русского языка
+
+# визуализация облака слов
+wordcloud>=1.9

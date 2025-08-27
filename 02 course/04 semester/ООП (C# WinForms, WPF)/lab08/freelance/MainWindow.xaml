@@ -1,0 +1,188 @@
+﻿<Window
+    x:Class="freelance.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Фрилансеры"
+    Width="800"
+    Height="450">
+    <TabControl>
+        <TabItem Header="Фрилансеры">
+
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Margin="0,0,0,10" Orientation="Horizontal">
+                    <TextBox
+                        Name="txtFreelancerName"
+                        Width="150"
+                        Margin="5"
+                        Text="Имя" />
+                    <TextBox
+                        Name="txtFreelancerEmail"
+                        Width="150"
+                        Margin="5"
+                        Text="Email" />
+                    <Button
+                        Width="75"
+                        Margin="5"
+                        Click="LoadFreelancerPhoto_Click"
+                        Content="Фото..." />
+                    <Image
+                        Name="imgFreelancerPhoto"
+                        Width="75"
+                        Height="75"
+                        Margin="5" />
+                    <Button
+                        Margin="5"
+                        Click="AddFreelancer_Click"
+                        Content="Добавить" />
+                    <Button
+                        Margin="5"
+                        Click="UpdateFreelancer_Click"
+                        Content="Изменить" />
+                    <Button
+                        Margin="5"
+                        Click="DeleteFreelancer_Click"
+                        Content="Удалить" />
+                    <TextBox
+                        Name="txtSearchFreelancers"
+                        Width="150"
+                        Margin="5"
+                        Text="Поиск"
+                        TextChanged="SearchFreelancers_TextChanged" />
+                </StackPanel>
+
+                <DataGrid
+                    Name="dgFreelancers"
+                    Grid.Row="1"
+                    AutoGenerateColumns="True"
+                    IsReadOnly="True"
+                    SelectionChanged="Freelancers_SelectionChanged" />
+            </Grid>
+
+        </TabItem>
+        <TabItem Header="Клиенты">
+
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Margin="0,0,0,10" Orientation="Horizontal">
+                    <TextBox
+                        Name="txtClientName"
+                        Width="150"
+                        Margin="5"
+                        Text="Имя" />
+                    <TextBox
+                        Name="txtClientEmail"
+                        Width="150"
+                        Margin="5"
+                        Text="Email" />
+                    <Button
+                        Width="75"
+                        Margin="5"
+                        Click="LoadClientPhoto_Click"
+                        Content="Фото..." />
+                    <Image
+                        Name="imgClientPhoto"
+                        Width="75"
+                        Height="75"
+                        Margin="5" />
+                    <Button
+                        Margin="5"
+                        Click="AddClient_Click"
+                        Content="Добавить" />
+                    <Button
+                        Margin="5"
+                        Click="UpdateClient_Click"
+                        Content="Изменить" />
+                    <Button
+                        Margin="5"
+                        Click="DeleteClient_Click"
+                        Content="Удалить" />
+                    <TextBox
+                        Name="txtSearchClients"
+                        Width="150"
+                        Margin="5"
+                        Text="Поиск"
+                        TextChanged="SearchClients_TextChanged" />
+                </StackPanel>
+
+                <DataGrid
+                    Name="dgClients"
+                    Grid.Row="1"
+                    AutoGenerateColumns="True"
+                    IsReadOnly="True"
+                    SelectionChanged="Clients_SelectionChanged" />
+            </Grid>
+
+        </TabItem>
+        <TabItem Header="Проекты и заказы">
+
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Margin="0,0,0,10" Orientation="Horizontal">
+                    <ComboBox
+                        Name="cbProjectClient"
+                        Width="150"
+                        Margin="5" />
+                    <TextBox
+                        Name="txtProjectTitle"
+                        Width="150"
+                        Margin="5"
+                        Text="Название" />
+                    <TextBox
+                        Name="txtProjectBudget"
+                        Width="100"
+                        Margin="5"
+                        Text="Бюджет" />
+                    <Button
+                        Width="75"
+                        Margin="5"
+                        Click="LoadProjectPhoto_Click"
+                        Content="Фото..." />
+                    <Image
+                        Name="imgProjectPhoto"
+                        Width="75"
+                        Height="75"
+                        Margin="5" />
+                    <Button
+                        Margin="5"
+                        Click="AddProject_Click"
+                        Content="Добавить" />
+                    <Button
+                        Margin="5"
+                        Click="UpdateProject_Click"
+                        Content="Изменить" />
+                    <Button
+                        Margin="5"
+                        Click="DeleteProject_Click"
+                        Content="Удалить" />
+                    <TextBox
+                        Name="txtSearchProjects"
+                        Width="150"
+                        Margin="5"
+                        Text="Поиск"
+                        TextChanged="SearchProjects_TextChanged" />
+                </StackPanel>
+
+                <DataGrid
+                    Name="dgProjects"
+                    Grid.Row="1"
+                    AutoGenerateColumns="True"
+                    IsReadOnly="True"
+                    SelectionChanged="Projects_SelectionChanged" />
+            </Grid>
+
+        </TabItem>
+    </TabControl>
+</Window>

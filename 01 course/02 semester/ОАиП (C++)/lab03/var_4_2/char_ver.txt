@@ -1,0 +1,43 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "");
+    char inputBuffer[1000];
+    cout << "Введите строку, состоящую из цифр и слов, разделенных пробелами: ";
+    cin.getline(inputBuffer, 1000);
+    ofstream file("input.txt"); // запись
+    if (file.is_open()) {
+        file << inputBuffer;    // строка в файл
+        file.close();
+    } else {
+        cerr << "Не удалось открыть файл для записи." << endl;
+        return 1;
+    }
+    ifstream inputFile("input.txt"); // чтение
+    if (inputFile.is_open()) {
+        char wordBuffer[100];        // предполагаем максимальную длину слова 100 символов
+        char longestWord[100];       // предполагаем максимальную длину слова 100 символов
+        int maxWordLength = 0;
+        while (inputFile >> wordBuffer) {
+            int currentWordLength = 0;
+            for (int i = 0; wordBuffer[i] != '\0'; i++) {
+                ++currentWordLength;
+            }
+            if (currentWordLength > maxWordLength) {
+                maxWordLength = currentWordLength;
+                for (int i = 0; i < currentWordLength; i++) {
+                    longestWord[i] = wordBuffer[i];
+                }
+                longestWord[currentWordLength] = '\0';
+            }
+        }
+        inputFile.close();
+        cout << "Самое длинное слово: " << longestWord << endl;
+        cout << "Количество символов в самом длинном слове: " << maxWordLength << endl;
+    } else {
+        cerr << "Не удалось открыть файл для чтения." << endl;
+        return 1;
+    }
+}

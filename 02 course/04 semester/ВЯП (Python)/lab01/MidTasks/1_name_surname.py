@@ -1,0 +1,6 @@
+name = input('Ваше имя: ')
+surname = input('Вашу фамилию: ')
+print('x'*30)
+print(f'Имя и фамилия: {name.capitalize()} {surname.capitalize()}')
+print(f'Ваши инициалы: {name[0].upper()}.{surname[0].upper()}.')
+print('x'*30)

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Table</title>
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    #root {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+
+    const data = [{
+      stock_name: "EFX",
+      company_name: "Equifax Inc",
+      price: 163.55,
+      currency: "USD",
+      change: "+9.03"
+    }, {
+      stock_name: "IRM",
+      company_name: "Iron Mountain Inc",
+      price: 33.21,
+      currency: "USD",
+      change: "+1.42"
+    }, {
+      stock_name: "NTAP",
+      company_name: "NetApp Inc",
+      price: 54.81,
+      currency: "USD",
+      change: "-6.01"
+    }, {
+      stock_name: "CTL",
+      company_name: "Centurylink Inc",
+      price: 13.79,
+      currency: "USD",
+      change: "-1.37"
+    }, {
+      stock_name: 'Apple Inc.',
+      company_name: 'Apple',
+      price: 124.423,
+      currency: 'USD',
+      change: '+25.4'
+    }]
+
+    data.sort((a, b) => {
+      const changeA = parseFloat(a.change);
+      const changeB = parseFloat(b.change);
+      return changeB - changeA;
+    });
+
+    ReactDOM.render(
+      <table border="1">
+        <thead>
+          <tr>
+            <th>stock_name</th>
+            <th>company_name</th>
+            <th>price</th>
+            <th>currency</th>
+            <th>change</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((item) => (
+            <tr>
+              <td>{item.stock_name}</td>
+              <td>{item.company_name}</td>
+              <td>{item.price}</td>
+              <td>{item.currency}</td>
+              <td style={{ color: item.change.startsWith('+') ? 'green' : 'red' }}>{item.change}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>,
+      document.getElementById('root')
+    );
+  </script>
+</body>
+
+</html>

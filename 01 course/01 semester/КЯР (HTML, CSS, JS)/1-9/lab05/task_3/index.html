@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Лаба 5 (Задание 3)</title>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <p>Регистрация постоянного клиента</p>
+            <div class="inputbox">
+                <label for="surname">Фамилия:</label>
+                <input id="surname" type="text">
+            </div>
+            <div class="inputbox">
+                <label for="name">Имя:</label>
+                <input id="name" type="text">
+            </div>
+            <div class="inputbox">
+                <label for="second_surname">Отчество:</label>
+                <input id="second_surname" type="text">
+            </div>
+            <div class="inputbox">
+                <label for="age">Ваш возраст:</label>
+                <input id="age" type="text">
+            </div>
+            <div class="checkbox-gender">
+                    <label>Пол:</label>
+                    <label for="gender"><input id="gender" name="gender" type="radio">мужской<input id="gender"  name="gender" type="radio">женский</label>
+            </div>
+            <div class="inputbox">
+                <label for="email">Email:</label>
+                <input id="email" type="email">
+            </div>
+            <div class="inputbox">
+                <label for="country">Страна проживания:</label>
+                <input id="country" type="text">
+            </div>
+            <div class="inputbox">
+                <label for="variaty">Откуда вы узнали o нас?</label>
+                <select id="variaty">
+                    <option disabled selected>Выберите вариант:</option>
+                    <option>Из соц.сетей</option>
+                    <option>Из новостных источников</option>
+                    <option>От знакомых</option>
+                    <option>От советов агентов</option>
+                    <option>Наткнулись случайно в интернете</option>
+                </select>
+            </div>
+            <div class="inputbox">
+                <label for="registration-date">Дата регистрации:</label>
+                <input id="registration-date" type="date">
+            </div>
+        </form>
+        <div class="buttons">
+            <button type="button">Регистрация</button>
+            <button type="reset">Отмена</button>
+        </div>
+        
+    </div>
+</body>
+</html>

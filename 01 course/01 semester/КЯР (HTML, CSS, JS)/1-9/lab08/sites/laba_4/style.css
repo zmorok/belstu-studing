@@ -1,0 +1,55 @@
+div {
+    display: inline-block;
+    padding: 10px;
+    font-size: 25px;
+    margin: 10px 5px 0px 5px;
+}
+.div1 {
+    border: 5px outset rgb(255,0,0);
+}
+.div2 {
+    border: 5px dashed rgb(0, 255, 0);
+    
+}
+.div3 {
+    border: 5px dotted rgb(0,0,255);
+}
+.div4 {
+    border: 6px double rgb(0, 255, 255);
+}
+.div5 {
+    border: 5px groove rgb(128, 0, 128);
+}
+.div6 {
+    border: 5px inset rgb(255, 255, 0);
+}
+.div7 {
+    border: 5px solid rgb(0, 0, 0);
+}
+span {
+    display: inline;
+    text-align: justify;
+    padding: 1px;
+    margin: 5px;
+    background-color: #FFA500;
+    border: thin solid #FF4500;
+}
+p {
+    display: block;
+    padding: 5px;
+}
+.p1 {
+    width: 400px;
+    text-align: center;
+    border: thin solid #FF7F50;
+   
+}
+.p2 {
+    border: 5px solid red;
+    border-radius: 20px/40px;
+    box-shadow: 2px -2px 8px 8px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+.p3 {
+    border:thick solid #FF6347;   
+}

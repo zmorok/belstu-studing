@@ -1,0 +1,32 @@
+#nav {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  border: 2px soild #66CDAA;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  width: 100px;
+  text-align: center;
+}
+
+.menu-item .submenu {
+  height: 40px;
+  padding-top: 0px;
+  background: green;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 1s, padding-top 1s;
+}
+
+.menu-item .submenu:hover {
+  padding-top: 15px;
+  text-decoration: underline;
+  transform: scale(1.2) translateY(5px);
+  transition: transform 1s, padding-top 1s;
+  z-index: 100;
+}

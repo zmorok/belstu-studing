@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Styles/MainWindowStyles.xaml" />
+        <ResourceDictionary Source="/Styles/ViewsStyles.xaml" />
+        <ResourceDictionary Source="/Styles/DialogWindowsStyles.xaml" />
+        <ResourceDictionary Source="/Styles/AuthenticationStyles.xaml" />
+        <ResourceDictionary Source="/Styles/Brushes/Brushes_WHITE.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

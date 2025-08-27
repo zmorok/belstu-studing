@@ -1,0 +1,179 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--#region LoginWindow-->
+
+    <Style x:Key="LoginWindowStyle" TargetType="Window">
+        <Setter Property="Background" Value="{DynamicResource Login_Window_BgColor_Brush}" />
+        <Setter Property="ResizeMode" Value="NoResize" />
+        <Setter Property="Height" Value="320" />
+        <Setter Property="Width" Value="350" />
+    </Style>
+
+    <Style x:Key="BorderMainStyle" TargetType="Border">
+        <Setter Property="Background" Value="{DynamicResource Login_BorderMain_BgColor_Brush}" />
+        <Setter Property="Padding" Value="20" />
+        <Setter Property="Width" Value="300" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="CornerRadius" Value="12" />
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+
+    <Style x:Key="HeaderText" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{DynamicResource Login_HeaderText_FgColor_Brush}" />
+        <Setter Property="Margin" Value="0,0,0,15" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="PrimaryButton" TargetType="Button">
+        <Setter Property="Background" Value="{DynamicResource Login_Button1_BgColor_Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource Login_Button1_FgColor_Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource Login_Button1_FgColor_Brush}" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Padding" Value="8,4" />
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Width" Value="90" />
+        <Setter Property="Height" Value="30" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" CornerRadius="8">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource Login_Button1_IsMouseOver_BgColor_Brush}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style
+        x:Key="SecondaryButton"
+        BasedOn="{StaticResource PrimaryButton}"
+        TargetType="Button">
+        <Setter Property="Background" Value="{DynamicResource Login_Button2_BgColor_Brush}" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource Login_Button2_IsMouseOver_BgColor_Brush}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="RoundedTextBox" TargetType="TextBox">
+        <Setter Property="Width" Value="200" />
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Margin" Value="0,5,0,10" />
+        <Setter Property="Padding" Value="2" />
+        <Setter Property="Background" Value="{DynamicResource Login_TextBox_BgColor_Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Login_TextBox_BdColor_Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource Login_TextBox_FgColor_Brush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="FontSize" Value="13" />
+    </Style>
+
+    <Style x:Key="RoundedPasswordBox" TargetType="PasswordBox">
+        <Setter Property="Width" Value="200" />
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Margin" Value="0,5,0,15" />
+        <Setter Property="Padding" Value="2" />
+        <Setter Property="Background" Value="{DynamicResource Login_TextBox_BgColor_Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Login_TextBox_BdColor_Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource Login_TextBox_FgColor_Brush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="FontSize" Value="13" />
+    </Style>
+
+    <!--#endregion-->
+
+    <!--#region RegisterWindow-->
+
+    <Style x:Key="RegWindowStyle" TargetType="Window">
+        <Setter Property="Background" Value="{DynamicResource Login_Window_BgColor_Brush}" />
+        <Setter Property="ResizeMode" Value="NoResize" />
+        <Setter Property="Height" Value="360" />
+        <Setter Property="Width" Value="350" />
+    </Style>
+
+    <Style
+        x:Key="AccentButton"
+        BasedOn="{StaticResource PrimaryButton}"
+        TargetType="Button">
+        <Setter Property="Background" Value="{DynamicResource Reg_AccentButton_BgColor_Brush}" />
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource Reg_AccentButton_IsMouseOver_BgColor_Brush}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="RoundedComboBox" TargetType="ComboBox">
+        <Setter Property="Width" Value="200" />
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Margin" Value="0,5,0,15" />
+        <Setter Property="Padding" Value="2" />
+        <Setter Property="Background" Value="{DynamicResource Login_TextBox_BgColor_Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Login_TextBox_BdColor_Brush}" />
+        <Setter Property="Foreground" Value="Black" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="FontSize" Value="13" />
+    </Style>
+
+    <!--#endregion-->
+
+    <!--#region StartupWindow-->
+
+    <Style x:Key="StartupWindowStyle" TargetType="Window">
+        <Setter Property="Width" Value="400" />
+        <Setter Property="Height" Value="300" />
+        <Setter Property="AllowsTransparency" Value="False" />
+        <Setter Property="Background" Value="{DynamicResource Login_Window_BgColor_Brush}" />
+        <Setter Property="ResizeMode" Value="NoResize" />
+    </Style>
+
+    <Style x:Key="StartupBorderStyle" TargetType="Border">
+        <Setter Property="Background" Value="{DynamicResource Login_BorderMain_BgColor_Brush}" />
+        <Setter Property="Padding" Value="20" />
+        <Setter Property="Margin" Value="20" />
+        <Setter Property="CornerRadius" Value="12" />
+    </Style>
+
+    <Style x:Key="StartupPrimaryButton" TargetType="Button">
+        <Setter Property="Background" Value="{DynamicResource Login_Button1_BgColor_Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource Login_Button1_FgColor_Brush}" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Padding" Value="10,5" />
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Width" Value="150" />
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        CornerRadius="8"
+                        SnapsToDevicePixels="True">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource Login_Button1_IsMouseOver_BgColor_Brush}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--#endregion-->
+</ResourceDictionary>

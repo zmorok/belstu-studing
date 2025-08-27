@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task_1</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style-huge.css" media="(min-width:769px) and (max-width: 1280px)">
+  <style>
+    @import url(styles/style-medium.css) screen and (min-width: 481px) and (max-width: 768px);
+  </style>
+</head>
+
+<body>
+  <!-- &#8801; hamburger -->
+  <div class="container">
+    <header>Про Flexbox и немного музыки :)</header>
+    <div class="cell1">
+      <h3>Практические примеры Flexbox</h3>
+      <video controls="controls">
+        <source src="media/video/Practical examples of Flexbox.mp4">
+      </video>
+      <hr>
+      <h3>Flexbox курс за 6 минут!</h3>
+      <video controls="controls">
+        <source src="media/video/Flexbox CSS course for 6 minutes!.mp4">
+      </video>
+    </div>
+    <div class="cell2">
+      <h1>Flexbox разметка в CSS</h1>
+      <p>
+        Flexbox разметка в CSS даёт один из наиболее эффективных способов расстановки, выравнивания и распределения
+        места
+        между
+        элементами внутри контейнера, даже если их размер неизвестен или динамичен (собственно, по этому его и называют
+        flex, от
+        слова flexible, что по-английски имеет двойственное значение — гибкий и уступчивый, что очень сочетается с
+        моделью
+        поведения flexbox).
+
+        Основной целью flexbox является предоставление возможности изменения своих элементов по ширине и высоте, для
+        того,
+        чтобы
+        они максимально эффективно умещались в доступном месте родительского контейнера, в частности — это удобно в тех
+        случаях,
+        когда нужно соответствовать всем типам дисплеев устройств и размерам экранов. Flex контейнер расширяет вложенные
+        элементы для того, чтобы заполнить доступное пространство или же урезает их, чтобы избежать переполнения.
+
+        Очень важный момент, flexbox независим от направления, в отличие от обычных шаблонов, блочная модель основана на
+        вертикальном размещении элементов, а инлайновая на горизонтальной. Пока это достаточно хорошо работало на
+        простых
+        страницах (и сайтах), эти недостатки в гибкости довольно сильно влияли на поддержку больших и сложных
+        приложений,
+        особенно когда дело касалось смены ориентирования, ресайзинга, растягивания или наоборот сокращения элементов.
+      </p>
+    </div>
+    <div class="cell3">
+      <h1>Различные треки:</h1>
+      <h3>Kanye West - Runaway</h3>
+      <div class="music">
+        <audio controls="controls">
+          <source src="media/music/Kanye West - Runaway.mp3">
+        </audio>
+        <img src="media/image/Kanye West - Runaway.jpg" onclick="photoScale()">
+      </div>
+      <!---->
+      <h3>Øneheart - Next To You</h3>
+      <div class="music">
+        <audio controls="controls">
+          <source src="media/music/Øneheart - Next To You.mp3">
+        </audio>
+        <img src="media/image/Øneheart - Next To You.jpg" onclick="photoScale()">
+      </div>
+      <!---->
+      <h3>Vøj, Ft Narvent - Memory Reboot</h3>
+      <div class="music">
+        <audio controls="controls">
+          <source src="media/music/Vøj, Ft Narvent - Memory Reboot.mp3">
+        </audio>
+        <img src="media/image/Vøj, Ft Narvent - Memory Reboot.jpg">
+      </div>
+      <!---->
+      <h3>Romantica, Ft Lestmor - Easy Peazy</h3>
+      <div class="music">
+        <audio controls="controls">
+          <source src="media/music/Romantica, Ft Lestmor -  Easy Peazy.mp3">
+        </audio>
+        <img src="media/image/Romantica, Ft Lestmor - Easy Peazy.jpg">
+      </div>
+      <!---->
+      <h3>Shadowraze - Холод</h3>
+      <div class="music">
+        <audio controls="controls">
+          <source src="media/music/Shadowraze - Холод.mp3">
+        </audio>
+        <img src="media/image/Shadowraze Холод.jpg">
+      </div>
+      <!---->
+      <h3>Молчат Дома - Волны</h3>
+      <div class="music">
+        <audio controls="controls">
+          <source src="media/music/Молчат Дома - Волны.mp3">
+        </audio>
+        <img src="media/image/Молчат Дома - Волны.jpg">
+      </div>
+
+    </div>
+  </div>
+  <div class="container-of-images">
+    <div class="imgs">
+      <figure>
+        <img src="media/image/images/1.jpg">
+        <figcaption>Skull</figcaption>
+      </figure>
+    </div>
+    <div class="imgs">
+      <figure>
+        <img src="media/image/images/2.jpg">
+        <figcaption>Laptop</figcaption>
+      </figure>
+    </div>
+    <div class="imgs">
+      <figure>
+        <img src="media/image/images/3.jpg">
+        <figcaption>Red gift</figcaption>
+      </figure>
+    </div>
+    <div class="imgs">
+      <figure>
+        <img src="media/image/images/4.jpg">
+        <figcaption>Iphone</figcaption>
+      </figure>
+    </div>
+    <div class="imgs">
+      <figure>
+        <img src="media/image/images/5.jpg">
+        <figcaption>Grey square</figcaption>
+      </figure>
+    </div>
+    <div class="imgs">
+      <figure>
+        <img src="media/image/images/6.jpg">
+        <figcaption>Blue gift</figcaption>
+      </figure>
+    </div>
+    <div class="imgs">
+      <figure>
+        <img src="media/image/images/7.jpg">
+        <figcaption>Kettle</figcaption>
+      </figure>
+    </div>
+    <div class="imgs">
+      <figure>
+        <img src="media/image/images/8.jpg">
+        <figcaption>Society</figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+<script src="script/script.js" type="text/javascript"></script>
+
+</html>

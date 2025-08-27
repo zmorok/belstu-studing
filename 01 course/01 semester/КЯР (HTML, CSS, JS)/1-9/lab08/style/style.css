@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(27, 27, 27);
+}
+aside {
+  width: auto;
+  background-color: #f0f0f0;
+  padding: 20px;
+  float: right;
+  border-bottom-left-radius: 20px;
+}
+aside a {
+  display: block;
+  color: red;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  font-family:'Popins', monospace;
+  text-decoration: none;
+}
+aside a:link {
+  color: red;
+}
+aside a:visited {
+  color: #8B0000;
+}
+aside a:hover {
+  color: green;
+}
+aside a:active {
+  color: rgb(184, 134, 11);
+}
+aside h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-style: italic;
+  animation: coloredText 30s infinite;
+}
+
+@keyframes coloredText {
+  0% { color: black; }
+  5% { color: aqua; }
+  10% { color:blue; }
+  15% { color: blueviolet; }
+  20% { color: brown; }
+  25% { color: cadetblue; }
+  30% { color: chartreuse; }
+  35% { color: chocolate; }
+  40% { color:coral  }
+  45% { color:cornflowerblue  }
+  50% { color:crimson  }
+  55% { color:darkblue  }
+  60% { color:darkgoldenrod  }
+  65% { color:darkgreen  }
+  70% { color:darkolivegreen  }
+  75% { color:darkmagenta  }
+  80% { color:darkred  }
+  85% { color:forestgreen  }
+  90% { color:gold  }
+  95% { color:mediumvioletred  }
+  100% { color: black; }
+}
+.content {
+  margin-left: 50px;
+}
+.content h1 {
+  animation: coloredText 30s infinite;
+  width: auto;
+  text-align: center;
+}
+.content dl {
+  color: white;
+}
+.content dl dt {
+  font-size: 2em;
+  font-style: italic;
+  text-decoration: underline;
+}
+.content dl dd {
+  padding: 5px 0 5px 25px;
+  font-size: 1.2em;
+}
+

@@ -1,0 +1,81 @@
+/*убираю отступы и поля у навигации*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+/*фиксирую nav*/
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+nav ul {
+	position: relative;
+}
+/*размер "Меню"*/
+nav ul li {
+	width: 200px;
+}
+/*стиль для ссылки "Меню"*/
+nav ul li .menu {
+	padding: 10px;
+	display: block;
+	background-color: yellow;
+	border: 1px black solid;
+	user-select: none;
+	cursor: default;
+	font-size: 20px;
+}
+nav ul li .menu:link,
+nav ul li .menu:visited,
+nav ul li .menu:active,
+nav ul li .menu {
+	color: blueviolet;
+}
+/*Размер ячеек выпадающего списка*/
+nav ul ul li {
+	display: inline-block;
+	width: 120px;
+}
+/*Стилизация ячеек выпадающего списка*/
+nav ul ul li a {
+	display: block;
+	background-color: rgb(214, 41, 41);
+	border: 2px rgb(68, 15, 15) dashed;
+	font-size: 1.1em;
+	font-family: sans-serif;
+	padding: 5px 0 5px 5px;
+}
+nav ul ul li:nth-child(1) a,
+nav ul ul li:nth-child(2) a {
+	border-bottom: none;
+}
+/*по умолчанию выпад. список не виден*/
+nav ul li > ul {
+	display: none;
+}
+
+nav ul li:hover > ul,
+li {
+	display: list-item;
+	animation: dropList 0.5s ease forwards;
+	z-index: -1;
+}
+
+nav ul li ul li a:active {
+	color: rgb(68, 15, 15);
+	text-decoration: underline;
+}
+
+@keyframes dropList {
+	0% {
+		transform: translateY(-50px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

@@ -1,0 +1,24 @@
+nav {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+nav a {
+	display: inline;
+	padding: 10px 20px 10px 20px;
+	background-color: yellow;
+	border: 3px green solid;
+	color: green;
+	text-decoration: none;
+}
+nav a:hover {
+	background-color: green;
+	color: yellow;
+	transition: 0.2s;
+}
+hr {
+	margin-bottom: 50px;
+}

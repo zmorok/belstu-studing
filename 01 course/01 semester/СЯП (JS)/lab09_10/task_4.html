@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Графики функций</title>
+  <link rel="stylesheet" href="styles/style_4.css">
+  <script src="jquery/jquery-3.7.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="func">
+      <label for="func1">y = x^2 &#8594; </label>
+      <input type="radio" name="func" id="func1">
+    </div>
+
+    <div class="func">
+      <label for="func2">y = x^3 &#8594; </label>
+      <input type="radio" name="func" id="func2">
+    </div>
+
+    <div class="func">
+      <label for="func3">y = sin(x) &#8594; </label>
+      <input type="radio" name="func" id="func3">
+    </div>
+
+    <div class="func">
+      <label for="func4">y = cos(x) &#8594; </label>
+      <input type="radio" name="func" id="func4">
+    </div>
+
+    <div class="func">
+      <label for="func5">y = tan(x/2) &#8594; </label>
+      <input type="radio" name="func" id="func5">
+    </div>
+
+    <label for="color">Выберите цвет:</label>
+    <select id="color">
+      <option value="black" selected>Черный</option>
+      <option value="blue">Синий</option>
+      <option value="red">Красный</option>
+      <option value="green">Зеленый</option>
+    </select>
+  </div>
+  <canvas id="сanvas" width="1000" height="600"></canvas>
+</body>
+<script src="script/task_4.js" type="text/javascript"></script>
+
+</html>

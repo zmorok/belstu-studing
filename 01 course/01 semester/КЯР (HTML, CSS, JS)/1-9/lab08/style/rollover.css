@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family:'Roboto', sans-serif ;
+}
+nav {
+  padding-top: 10px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+nav ul > li {
+  display: inline-block;
+  border: 1px black solid;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+}
+nav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 30px;
+}
+#bstu {
+  background: url('../images/facultet.png') no-repeat 0 0;
+}
+#IT:hover {
+  background: url('../images/facultet.png') no-repeat 0 -30px;
+}
+#PIM:hover {
+  background: url('../images/facultet.png') no-repeat 0 -90px;
+}
+#XTIT:hover {
+  background: url('../images/facultet.png') no-repeat 0 -60px;
+}
+nav ul ul {
+  display: none;
+  margin-left: -1px;
+}
+nav ul ul li {
+  margin-top: -1px;
+}
+nav ul li:nth-child(2):hover > ul {
+  display: block;
+}
+
+nav ul ul li a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+  transition: .2s;
+}
+
+nav ul #bstu > a, nav ul #IT > a, nav ul #PIM > a, nav ul #XTIT > a {
+  transform: scale(1);
+  transition: .2s;
+}
+nav ul #bstu:hover > a, nav ul #IT:hover > a, nav ul #PIM:hover > a, nav ul #XTIT:hover > a {
+  transform: scale(1.3);
+  transition: .2s;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}

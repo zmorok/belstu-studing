@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gameAttackHeal", "gameAttackHeal\gameAttackHeal.csproj", "{144ED1EC-AFDA-4396-86E6-DFC87B3655FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "processingStr", "processingStr\processingStr.csproj", "{8CB0D099-CE7C-453D-B03E-CCEF9BA73BD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{144ED1EC-AFDA-4396-86E6-DFC87B3655FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144ED1EC-AFDA-4396-86E6-DFC87B3655FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144ED1EC-AFDA-4396-86E6-DFC87B3655FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144ED1EC-AFDA-4396-86E6-DFC87B3655FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB0D099-CE7C-453D-B03E-CCEF9BA73BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB0D099-CE7C-453D-B03E-CCEF9BA73BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB0D099-CE7C-453D-B03E-CCEF9BA73BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB0D099-CE7C-453D-B03E-CCEF9BA73BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E410D51-A9E1-4896-812A-FF9C3F9C9EFA}
+	EndGlobalSection
+EndGlobal

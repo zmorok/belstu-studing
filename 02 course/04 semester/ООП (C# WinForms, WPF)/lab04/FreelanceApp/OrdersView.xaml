@@ -1,0 +1,186 @@
+﻿<UserControl
+    x:Class="FreelanceApp.OrdersView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:FreelanceApp.Services.Converters">
+
+    <UserControl.Resources>
+        <local:DecimalConverter
+            x:Key="DecimalConverter"
+            Max="1000000"
+            Min="0" />
+    </UserControl.Resources>
+
+    <Grid Background="Transparent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--  Панель управления  -->
+        <StackPanel
+            Grid.Column="0"
+            Margin="10"
+            VerticalAlignment="Top">
+            <Border Style="{DynamicResource BorderStyle}">
+                <StackPanel Style="{DynamicResource StackPanelStyle}">
+
+                    <TextBlock Style="{DynamicResource PanelHeaderStyle}" Text="{DynamicResource OrdersView_Search_Header}" />
+                    <TextBox Name="SearchBox" Style="{DynamicResource PanelTextBoxStyle}" />
+
+                    <TextBlock Style="{DynamicResource PanelHeaderStyle}" Text="{DynamicResource OrdersView_Category_Header}" />
+                    <ComboBox
+                        Name="CategoryBox"
+                        SelectedIndex="0"
+                        Style="{DynamicResource PanelComboBoxStyle}">
+                        <ComboBoxItem Content="{DynamicResource OrdersView_Category_Type_All}" />
+                        <ComboBoxItem Content="{DynamicResource OrdersView_Category_Type_Dev}" />
+                        <ComboBoxItem Content="{DynamicResource OrdersView_Category_Type_Design}" />
+                        <ComboBoxItem Content="{DynamicResource OrdersView_Category_Type_Marketing}" />
+                        <ComboBoxItem Content="{DynamicResource OrdersView_Category_Type_Content}" />
+                        <ComboBoxItem Content="{DynamicResource OrdersView_Category_Type_Others}" />
+                    </ComboBox>
+
+                    <TextBlock Style="{DynamicResource PanelHeaderStyle}" Text="{DynamicResource OrdersView_Price_Header}" />
+                    <StackPanel
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Orientation="Horizontal">
+                        <TextBlock
+                            Margin="0,0,5,0"
+                            VerticalAlignment="Center"
+                            Foreground="{DynamicResource Fg_Brush}"
+                            Text="{DynamicResource OrdersView_Price_From}" />
+                        <TextBox
+                            Name="MinPriceBox"
+                            Width="70"
+                            Margin="0,10,0,10"
+                            Style="{DynamicResource PanelTextBoxStyle}">
+                            <TextBox.Text>
+                                <Binding
+                                    Converter="{StaticResource DecimalConverter}"
+                                    Mode="TwoWay"
+                                    Path="MinPrice"
+                                    UpdateSourceTrigger="PropertyChanged" />
+                            </TextBox.Text>
+                        </TextBox>
+                        <TextBlock
+                            Margin="10,0,0,0"
+                            VerticalAlignment="Center"
+                            Foreground="{DynamicResource Fg_Brush}"
+                            Text="{DynamicResource OrdersView_Price_To}" />
+                        <TextBox
+                            Name="MaxPriceBox"
+                            Width="70"
+                            Margin="5,10,10,10"
+                            Style="{DynamicResource PanelTextBoxStyle}">
+                            <TextBox.Text>
+                                <Binding
+                                    Converter="{StaticResource DecimalConverter}"
+                                    Mode="TwoWay"
+                                    Path="MaxPrice"
+                                    UpdateSourceTrigger="PropertyChanged" />
+                            </TextBox.Text>
+                        </TextBox>
+                    </StackPanel>
+
+                    <TextBlock Style="{DynamicResource PanelHeaderStyle}" Text="{DynamicResource OrdersView_Sorting_Header}" />
+                    <ComboBox
+                        Name="SortBox"
+                        SelectedIndex="0"
+                        Style="{DynamicResource PanelComboBoxStyle}">
+                        <ComboBoxItem Content="{DynamicResource OrdersView_Sorting_Type_None}" />
+                        <ComboBoxItem Content="{DynamicResource OrdersView_Sorting_Type_Price}" />
+                        <ComboBoxItem Content="{DynamicResource OrdersView_Sorting_Type_Name}" />
+                        <ComboBoxItem Content="{DynamicResource OrdersView_Sorting_Type_Category}" />
+                    </ComboBox>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Button
+                            Grid.Column="0"
+                            Width="50"
+                            Margin="20,0,0,0"
+                            Command="{Binding SortAscendingCommand}"
+                            Content="🔼"
+                            Style="{DynamicResource PanelButtonStyle}" />
+                        <Button
+                            Grid.Column="2"
+                            Width="50"
+                            Margin="0,0,20,0"
+                            Command="{Binding SortDescendingCommand}"
+                            Content="🔽"
+                            Style="{DynamicResource PanelButtonStyle}" />
+                    </Grid>
+
+                    <Button
+                        Command="{Binding ApplyFilterCommand}"
+                        Content="{DynamicResource OrdersView_Btn_Apply}"
+                        Style="{DynamicResource PanelButtonStyle}" />
+
+                    <Button
+                        Command="{Binding ResetFilterCommand}"
+                        Content="{DynamicResource OrdersView_Btn_Reset}"
+                        Style="{DynamicResource PanelButtonStyle}" />
+
+                    <Button
+                        Margin="10,5,10,10"
+                        Command="{Binding GoBackCommand}"
+                        Content="{DynamicResource OrdersView_Btn_Back}"
+                        Style="{DynamicResource PanelButtonStyle}" />
+                </StackPanel>
+            </Border>
+        </StackPanel>
+
+        <!--  Список заказов  -->
+        <ListBox
+            Name="OrdersList"
+            Grid.Column="1"
+            MouseDoubleClick="Description"
+            Style="{DynamicResource ListBoxDataStyle}">
+
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="{x:Type ListBoxItem}">
+                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+                </Style>
+            </ListBox.ItemContainerStyle>
+
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel
+                        HorizontalAlignment="Center"
+                        IsItemsHost="True"
+                        Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Style="{DynamicResource ListBoxItemBorderStyle}">
+                        <StackPanel>
+                            <TextBlock
+                                Margin="0,0,0,5"
+                                Style="{DynamicResource ListBoxItemStyle}"
+                                Text="{Binding Title}" />
+                            <TextBlock
+                                FontSize="12"
+                                Foreground="Gray"
+                                Text="{Binding Description}"
+                                TextWrapping="Wrap" />
+                            <TextBlock
+                                Margin="0,5,0,0"
+                                FontWeight="SemiBold"
+                                Foreground="Green"
+                                Text="{Binding Price}" />
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

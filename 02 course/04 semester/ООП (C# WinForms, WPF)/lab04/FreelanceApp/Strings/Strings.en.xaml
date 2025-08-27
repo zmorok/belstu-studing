@@ -1,0 +1,151 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--#region Startup window-->
+    <sys:String x:Key="StartupWindow_Title">Welcome</sys:String>
+    <sys:String x:Key="StartupWindow_Actions">Choose an action</sys:String>
+    <sys:String x:Key="StartupWindow_Login">Login</sys:String>
+    <sys:String x:Key="StartupWindow_Register">Register</sys:String>
+    <!--#endregion-->
+
+    <!--#region Login-->
+    <sys:String x:Key="LoginWindow_Title">Login</sys:String>
+    <sys:String x:Key="LoginWindow_Header">Login</sys:String>
+    <sys:String x:Key="LoginWindow_Login">Username:</sys:String>
+    <sys:String x:Key="LoginWindow_Password">Password:</sys:String>
+    <sys:String x:Key="LoginWindow_Btn_Login">Login</sys:String>
+    <sys:String x:Key="LoginWindow_Btn_Back">Back</sys:String>
+    <!--  Login - MessageBox  -->
+    <sys:String x:Key="LoginWindow_Greetings">Welcome</sys:String>
+    <sys:String x:Key="LoginWindow_ErrorPassword">Invalid login or password!</sys:String>
+    <!--#endregion-->
+
+    <!--#region Registration-->
+    <sys:String x:Key="RegisterWindow_Title">Registration</sys:String>
+    <sys:String x:Key="RegisterWindow_Header">Register</sys:String>
+    <sys:String x:Key="RegisterWindow_Login">Username:</sys:String>
+    <sys:String x:Key="RegisterWindow_Password">Password:</sys:String>
+    <sys:String x:Key="RegisterWindow_Role">Role:</sys:String>
+    <sys:String x:Key="RegisterWindow_Role_Client">Client</sys:String>
+    <sys:String x:Key="RegisterWindow_Role_Administrator">Administrator</sys:String>
+    <sys:String x:Key="RegisterWindow_Btn_Register">Register</sys:String>
+    <sys:String x:Key="RegisterWindow_Btn_Back">Back</sys:String>
+    <sys:String x:Key="RegisterWindow_Greetings">Registration successful! You are now logged in.</sys:String>
+    <sys:String x:Key="RegisterWindow_ErrorRegistration">A user with this username already exists!</sys:String>
+    <!--#endregion-->
+
+    <!--#region Main window-->
+    <sys:String x:Key="MainWindow_Title">Main Window</sys:String>
+    <sys:String x:Key="MainWindow_Header">Welcome,</sys:String>
+    <sys:String x:Key="MainWindow_SideBar_Btn_Orders">Orders</sys:String>
+    <sys:String x:Key="MainWindow_SideBar_Btn_Freelancers">Freelancers</sys:String>
+    <sys:String x:Key="MainWindow_SideBar_Btn_Back">Logout</sys:String>
+    <!--#endregion-->
+
+    <!--#region Admin Panel-->
+    <sys:String x:Key="MainWindow_AdminPanel_Title">Admin Panel</sys:String>
+    <sys:String x:Key="MainWindow_AdminPanel_Btn_Orders">Manage Orders</sys:String>
+    <sys:String x:Key="MainWindow_AdminPanel_Btn_Freelancers">Manage Freelancers</sys:String>
+    <!--#endregion-->
+
+    <sys:String x:Key="DefaultTextBlock_Text">Choose a section</sys:String>
+
+    <!--#region Freelancers-->
+    <sys:String x:Key="FreelancersView_Filters_Header">Filters</sys:String>
+    <sys:String x:Key="FreelancersView_Filters_Name">Name</sys:String>
+    <sys:String x:Key="FreelancersView_Filters_Skill">Skill</sys:String>
+    <sys:String x:Key="FreelancersView_Filters_Rating">Rating from:</sys:String>
+
+    <sys:String x:Key="FreelancersView_Sorting_Header">Sort by:</sys:String>
+    <sys:String x:Key="FreelancersView_Sorting_Type_None">None</sys:String>
+    <sys:String x:Key="FreelancersView_Sorting_Type_Name">Name</sys:String>
+    <sys:String x:Key="FreelancersView_Sorting_Type_Rating">Rating</sys:String>
+
+    <sys:String x:Key="FreelancersView_Btn_Apply">Apply Filter</sys:String>
+    <sys:String x:Key="FreelancersView_Btn_Reset">Reset</sys:String>
+    <sys:String x:Key="FreelancersView_Btn_Back">Back</sys:String>
+    <!--#endregion-->
+
+    <!--#region Orders-->
+    <sys:String x:Key="OrdersView_Search_Header">Search</sys:String>
+
+    <sys:String x:Key="OrdersView_Category_Header">Category</sys:String>
+    <sys:String x:Key="OrdersView_Category_Type_All">All</sys:String>
+    <sys:String x:Key="OrdersView_Category_Type_Dev">Development</sys:String>
+    <sys:String x:Key="OrdersView_Category_Type_Design">Design</sys:String>
+    <sys:String x:Key="OrdersView_Category_Type_Marketing">Marketing</sys:String>
+    <sys:String x:Key="OrdersView_Category_Type_Content">Content</sys:String>
+    <sys:String x:Key="OrdersView_Category_Type_Others">Other</sys:String>
+
+    <sys:String x:Key="OrdersView_Price_Header">Price Range</sys:String>
+    <sys:String x:Key="OrdersView_Price_From">from:</sys:String>
+    <sys:String x:Key="OrdersView_Price_To">to:</sys:String>
+
+    <sys:String x:Key="OrdersView_Sorting_Header">Sort by:</sys:String>
+    <sys:String x:Key="OrdersView_Sorting_Type_None">None</sys:String>
+    <sys:String x:Key="OrdersView_Sorting_Type_Price">Price</sys:String>
+    <sys:String x:Key="OrdersView_Sorting_Type_Name">Title</sys:String>
+    <sys:String x:Key="OrdersView_Sorting_Type_Category">Category</sys:String>
+
+    <sys:String x:Key="OrdersView_Btn_Apply">Apply Filter</sys:String>
+    <sys:String x:Key="OrdersView_Btn_Reset">Reset</sys:String>
+    <sys:String x:Key="OrdersView_Btn_Back">Back</sys:String>
+    <!--#endregion-->
+
+    <!--#region Admin Orders Dialog-->
+    <sys:String x:Key="OrdersDialog_Title">Order Management</sys:String>
+    <sys:String x:Key="OrdersDialog_Order_Name">Order Title:</sys:String>
+    <sys:String x:Key="OrdersDialog_Order_Category">Category:</sys:String>
+    <sys:String x:Key="OrdersDialog_Order_Description">Description:</sys:String>
+    <sys:String x:Key="OrdersDialog_Order_Price">Price:</sys:String>
+    <sys:String x:Key="OrdersDialog_Order_FullDescription">Full Description:</sys:String>
+    <sys:String x:Key="OrdersDialog_Btn_Confirm">Confirm</sys:String>
+    <sys:String x:Key="OrdersDialog_Btn_Cancel">Cancel</sys:String>
+
+    <sys:String x:Key="OrdersDialog_DataGrid_Name">Title</sys:String>
+    <sys:String x:Key="OrdersDialog_DataGrid_Category">Category</sys:String>
+    <sys:String x:Key="OrdersDialog_DataGrid_Description">Description</sys:String>
+    <sys:String x:Key="OrdersDialog_DataGrid_Price">Price</sys:String>
+    <sys:String x:Key="OrdersDialog_DataGrid_FullDescription">Full Description</sys:String>
+    <!--#endregion-->
+
+    <!--#region Admin Freelancers Dialog-->
+    <sys:String x:Key="FreelancersDialog_Title">Freelancer Management</sys:String>
+    <sys:String x:Key="FreelancersDialog_Freelancer_Name">Freelancer Name:</sys:String>
+    <sys:String x:Key="FreelancersDialog_Freelancer_Skills">Skills:</sys:String>
+    <sys:String x:Key="FreelancersDialog_Freelancer_Rating">Rating:</sys:String>
+    <sys:String x:Key="FreelancersDialog_Freelancer_Description">Description:</sys:String>
+    <sys:String x:Key="FreelancersDialog_Btn_Confirm">Confirm</sys:String>
+    <sys:String x:Key="FreelancersDialog_Btn_Cancel">Cancel</sys:String>
+
+    <sys:String x:Key="FreelancersDialog_DataGrid_Name">Name</sys:String>
+    <sys:String x:Key="FreelancersDialog_DataGrid_Skills">Skills</sys:String>
+    <sys:String x:Key="FreelancersDialog_DataGrid_Rating">Rating</sys:String>
+    <sys:String x:Key="FreelancersDialog_DataGrid_Description">Description</sys:String>
+    <!--#endregion-->
+
+    <!--#region Dialogs - Order/Freelancer-->
+    <sys:String x:Key="Order_Title">Title</sys:String>
+    <sys:String x:Key="Order_Description">Description</sys:String>
+    <sys:String x:Key="Order_Price">Price</sys:String>
+    <sys:String x:Key="Order_Category">Category</sys:String>
+    <sys:String x:Key="Order_FullDescription">Full Description</sys:String>
+
+    <sys:String x:Key="Freelancer_Name">Name</sys:String>
+    <sys:String x:Key="Freelancer_Skills">Skills</sys:String>
+    <sys:String x:Key="Freelancer_Rating">Rating</sys:String>
+    <sys:String x:Key="Freelancer_Description">Description</sys:String>
+    <!--#endregion-->
+
+    <!--#region User Profile-->
+    <sys:String x:Key="MainWindow_Profile_Header">Profile</sys:String>
+    <sys:String x:Key="MainWindow_Profile_Username">Username</sys:String>
+    <sys:String x:Key="MainWindow_Profile_Password">New Password</sys:String>
+    <sys:String x:Key="MainWindow_Profile_Language">Interface Language</sys:String>
+    <sys:String x:Key="MainWindow_Profile_Theme">Theme</sys:String>
+    <sys:String x:Key="MainWindow_Profile_Save">Save</sys:String>
+    <sys:String x:Key="MainWindow_Profile_GoBack">Back</sys:String>
+    <!--#endregion-->
+</ResourceDictionary>

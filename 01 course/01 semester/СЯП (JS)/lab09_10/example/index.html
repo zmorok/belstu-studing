@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Перетаскивание текста и изображения</title>
+  <style>
+    #draggable {
+      width: 200px;
+      height: 200px;
+      border: 2px solid #000;
+      padding: 10px;
+      position: absolute;
+      cursor: move;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="draggable" draggable="true">
+    <p>Ваш текст здесь</p>
+    <img src="../../6.jpg" alt="Ваше изображение" width="200px" height="200px">
+  </div>
+
+  <script>
+    let offsetX, offsetY, isDragging = false;
+
+    const draggableElement = document.getElementById('draggable');
+
+    draggableElement.addEventListener('dragstart', e => {
+      offsetX = e.clientX - draggableElement.getBoundingClientRect().left;
+      offsetY = e.clientY - draggableElement.getBoundingClientRect().top;
+      isDragging = true;
+    });
+
+    document.addEventListener('mousemove', e => {
+      if (isDragging) {
+        const x = e.clientX - offsetX;
+        const y = e.clientY - offsetY;
+
+        draggableElement.style.left = `${x}px`;
+        draggableElement.style.top = `${y}px`;
+      }
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+    });
+  </script>
+
+</body>
+
+</html>

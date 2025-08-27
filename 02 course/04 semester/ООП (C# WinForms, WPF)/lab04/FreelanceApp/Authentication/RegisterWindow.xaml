@@ -1,0 +1,58 @@
+﻿<Window
+    x:Class="FreelanceApp.Authentication.RegisterWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FreelanceApp.Authentication"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="{DynamicResource RegisterWindow_Title}"
+    Icon="/Icons/User.ico"
+    Style="{DynamicResource RegWindowStyle}"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Border Height="310" Style="{DynamicResource BorderMainStyle}">
+
+            <StackPanel HorizontalAlignment="Center" Orientation="Vertical">
+                <TextBlock Style="{DynamicResource HeaderText}" Text="{DynamicResource RegisterWindow_Header}" />
+
+                <TextBlock
+                    FontWeight="SemiBold"
+                    Foreground="{DynamicResource Fg_Brush}"
+                    Text="{DynamicResource RegisterWindow_Login}" />
+                <TextBox Name="NewUsernameBox" Style="{DynamicResource RoundedTextBox}" />
+
+                <TextBlock
+                    FontWeight="SemiBold"
+                    Foreground="{DynamicResource Fg_Brush}"
+                    Text="{DynamicResource RegisterWindow_Password}" />
+                <PasswordBox Name="NewPasswordBox" Style="{StaticResource RoundedPasswordBox}" />
+
+                <TextBlock
+                    FontWeight="SemiBold"
+                    Foreground="{DynamicResource Fg_Brush}"
+                    Text="{DynamicResource RegisterWindow_Role}" />
+                <ComboBox
+                    Name="RoleBox"
+                    SelectedIndex="0"
+                    Style="{DynamicResource RoundedComboBox}">
+                    <ComboBoxItem Content="{DynamicResource RegisterWindow_Role_Client}" Foreground="Black" />
+                    <ComboBoxItem Content="{DynamicResource RegisterWindow_Role_Administrator}" Foreground="Black" />
+                </ComboBox>
+
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Button
+                        Width="140"
+                        Command="{Binding RegisterCommand}"
+                        Content="{DynamicResource RegisterWindow_Btn_Register}"
+                        Style="{DynamicResource AccentButton}" />
+                    <Button
+                        Command="{Binding GoBackCommand}"
+                        Content="{DynamicResource RegisterWindow_Btn_Back}"
+                        Style="{DynamicResource SecondaryButton}" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

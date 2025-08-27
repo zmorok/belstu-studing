@@ -1,0 +1,44 @@
+faculties {
+  background-color: aqua;
+  display: table;
+  margin: 20% 0 0 30%;
+}
+
+head,
+specialities,
+informations {
+  display: table-row;
+}
+
+faculty {
+  display: table-cell;
+  width: 130px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  background-color: rgb(134, 134, 2);
+  border: 2px solid #333;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.4em;
+}
+
+speciality,
+info {
+  display: table-cell;
+  padding-left: 5px;
+  width: 130px;
+  height: 30px;
+  vertical-align: middle;
+  background-color: yellow;
+  border: 2px solid #333;
+}
+
+/*<main>
+    <speciality>
+      <sfit>1</sfit>
+      <spim>2</spim>
+      <shtit>3</htit>
+      <sief>4</sief>
+    </speciality>
+  </main>
+*/

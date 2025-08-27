@@ -1,0 +1,166 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--#region  Стартовое окно-->
+    <sys:String x:Key="StartupWindow_Title">Добро пожаловать</sys:String>
+    <sys:String x:Key="StartupWindow_Actions">Выберите действие</sys:String>
+    <sys:String x:Key="StartupWindow_Login">Войти</sys:String>
+    <sys:String x:Key="StartupWindow_Register">Регистрация</sys:String>
+    <!--#endregion-->
+
+    <!--#region  Авторизация-->
+    <sys:String x:Key="LoginWindow_Title">Авторизация</sys:String>
+    <sys:String x:Key="LoginWindow_Header">Вход</sys:String>
+    <sys:String x:Key="LoginWindow_Login">Логин:</sys:String>
+    <sys:String x:Key="LoginWindow_Password">Пароль:</sys:String>
+    <sys:String x:Key="LoginWindow_Btn_Login">Войти</sys:String>
+    <sys:String x:Key="LoginWindow_Btn_Back">Назад</sys:String>
+    <!--  Авторизация - MessageBox  -->
+    <sys:String x:Key="LoginWindow_Greetings">Добро пожаловать</sys:String>
+    <sys:String x:Key="LoginWindow_ErrorPassword">Неверный логин или пароль!</sys:String>
+    <!--#endregion-->
+
+    <!--#region  Регистрация-->
+    <sys:String x:Key="RegisterWindow_Title">Регистрация</sys:String>
+    <sys:String x:Key="RegisterWindow_Header">Регистрация</sys:String>
+    <sys:String x:Key="RegisterWindow_Login">Логин:</sys:String>
+    <sys:String x:Key="RegisterWindow_Password">Пароль:</sys:String>
+    <sys:String x:Key="RegisterWindow_Role">Роль:</sys:String>
+    <!--  Регистрация - Роли  -->
+    <sys:String x:Key="RegisterWindow_Role_Client">Клиент</sys:String>
+    <sys:String x:Key="RegisterWindow_Role_Administrator">Администратор</sys:String>
+    <sys:String x:Key="RegisterWindow_Btn_Register">Зарегистрироваться</sys:String>
+    <sys:String x:Key="RegisterWindow_Btn_Back">Назад</sys:String>
+    <!--  Регистрация - MessageBox  -->
+    <sys:String x:Key="RegisterWindow_Greetings">Регистрация успешна! Выполнен вход в систему.</sys:String>
+    <sys:String x:Key="RegisterWindow_ErrorRegistration">Пользователь с таким логином уже существует!</sys:String>
+    <!--#endregion-->
+
+    <!--#region Главное окно-->
+    <sys:String x:Key="MainWindow_Title">Главное окно</sys:String>
+    <sys:String x:Key="MainWindow_Header">Добро пожаловать,</sys:String>
+    <!--  Главное окно-Сайдбар  -->
+    <sys:String x:Key="MainWindow_SideBar_Btn_Orders">Заказы</sys:String>
+    <sys:String x:Key="MainWindow_SideBar_Btn_Freelancers">Фрилансеры</sys:String>
+    <sys:String x:Key="MainWindow_SideBar_Btn_Back">Выход</sys:String>
+    <!--#endregion-->
+
+    <!--#region  Админ панель-->
+    <sys:String x:Key="MainWindow_AdminPanel_Title">Админ панель</sys:String>
+    <sys:String x:Key="MainWindow_AdminPanel_Btn_Orders">Управление заказами</sys:String>
+    <sys:String x:Key="MainWindow_AdminPanel_Btn_Freelancers">Управление фрилансерами</sys:String>
+    <!--#endregion-->
+
+    <sys:String x:Key="DefaultTextBlock_Text">Выберите раздел</sys:String>
+
+    <!--#region  Фрилансеры-->
+    <!--  Фрилансеры - фильтрация  -->
+    <sys:String x:Key="FreelancersView_Filters_Header">Фильтрация</sys:String>
+    <sys:String x:Key="FreelancersView_Filters_Name">Имя</sys:String>
+    <sys:String x:Key="FreelancersView_Filters_Skill">Навык</sys:String>
+    <sys:String x:Key="FreelancersView_Filters_Rating">Рейтинг от:</sys:String>
+
+    <!--  Фрилансеры - сортировка  -->
+    <sys:String x:Key="FreelancersView_Sorting_Header">Сортировка по:</sys:String>
+    <sys:String x:Key="FreelancersView_Sorting_Type_None">Нет</sys:String>
+    <sys:String x:Key="FreelancersView_Sorting_Type_Name">Имени</sys:String>
+    <sys:String x:Key="FreelancersView_Sorting_Type_Rating">Рейтингу</sys:String>
+
+    <!--  Фрилансеры - кнопки  -->
+    <sys:String x:Key="FreelancersView_Btn_Apply">Примен фильтр</sys:String>
+    <sys:String x:Key="FreelancersView_Btn_Reset">Сбросить</sys:String>
+    <sys:String x:Key="FreelancersView_Btn_Back">Назад</sys:String>
+    <!--#endregion-->
+
+    <!--#region  Заказы-->
+    <!--  Заказы - поиск  -->
+    <sys:String x:Key="OrdersView_Search_Header">Поиск</sys:String>
+
+    <!--  Заказы - категория  -->
+    <sys:String x:Key="OrdersView_Category_Header">Категория</sys:String>
+    <sys:String x:Key="OrdersView_Category_Type_All">Все</sys:String>
+    <sys:String x:Key="OrdersView_Category_Type_Dev">Разработка</sys:String>
+    <sys:String x:Key="OrdersView_Category_Type_Design">Дизайн</sys:String>
+    <sys:String x:Key="OrdersView_Category_Type_Marketing">Маркетинг</sys:String>
+    <sys:String x:Key="OrdersView_Category_Type_Content">Контент</sys:String>
+    <sys:String x:Key="OrdersView_Category_Type_Others">Разное</sys:String>
+
+    <!--  Заказы - цена  -->
+    <sys:String x:Key="OrdersView_Price_Header">Диапазон цен</sys:String>
+    <sys:String x:Key="OrdersView_Price_From">от:</sys:String>
+    <sys:String x:Key="OrdersView_Price_To">до:</sys:String>
+
+    <!--  Заказы - сортировка  -->
+    <sys:String x:Key="OrdersView_Sorting_Header">Сортировка по:</sys:String>
+    <sys:String x:Key="OrdersView_Sorting_Type_None">Нет</sys:String>
+    <sys:String x:Key="OrdersView_Sorting_Type_Price">Цене</sys:String>
+    <sys:String x:Key="OrdersView_Sorting_Type_Name">Названию</sys:String>
+    <sys:String x:Key="OrdersView_Sorting_Type_Category">Категории</sys:String>
+
+    <!--  Заказы - кнопки  -->
+    <sys:String x:Key="OrdersView_Btn_Apply">Применить фильтр</sys:String>
+    <sys:String x:Key="OrdersView_Btn_Reset">Сбросить</sys:String>
+    <sys:String x:Key="OrdersView_Btn_Back">Назад</sys:String>
+    <!--#endregion-->
+
+    <!--#region  Админ панель-->
+    <!--  Админ панель - Заказы  -->
+    <sys:String x:Key="OrdersDialog_Title">Управление заказами</sys:String>
+    <sys:String x:Key="OrdersDialog_Order_Name">Название заказа:</sys:String>
+    <sys:String x:Key="OrdersDialog_Order_Category">Категория:</sys:String>
+    <sys:String x:Key="OrdersDialog_Order_Description">Описание:</sys:String>
+    <sys:String x:Key="OrdersDialog_Order_Price">Цена:</sys:String>
+    <sys:String x:Key="OrdersDialog_Order_FullDescription">Полное описание:</sys:String>
+    <sys:String x:Key="OrdersDialog_Btn_Confirm">Подтвердить</sys:String>
+    <sys:String x:Key="OrdersDialog_Btn_Cancel">Отмена</sys:String>
+
+    <!--  Админ панель - Заказы - DataGrid  -->
+    <sys:String x:Key="OrdersDialog_DataGrid_Name">Название</sys:String>
+    <sys:String x:Key="OrdersDialog_DataGrid_Category">Категория</sys:String>
+    <sys:String x:Key="OrdersDialog_DataGrid_Description">Описание</sys:String>
+    <sys:String x:Key="OrdersDialog_DataGrid_Price">Цена</sys:String>
+    <sys:String x:Key="OrdersDialog_DataGrid_FullDescription">Полное описание</sys:String>
+
+    <!--  Админ панель - Фрилансеры  -->
+    <sys:String x:Key="FreelancersDialog_Title">Управление фрилансерами</sys:String>
+    <sys:String x:Key="FreelancersDialog_Freelancer_Name">Имя фрилансера:</sys:String>
+    <sys:String x:Key="FreelancersDialog_Freelancer_Skills">Навыки:</sys:String>
+    <sys:String x:Key="FreelancersDialog_Freelancer_Rating">Рейтинг:</sys:String>
+    <sys:String x:Key="FreelancersDialog_Freelancer_Description">Описание:</sys:String>
+    <sys:String x:Key="FreelancersDialog_Btn_Confirm">Подтвердить</sys:String>
+    <sys:String x:Key="FreelancersDialog_Btn_Cancel">Отмена</sys:String>
+
+    <!--  Админ панель - Фрилансеры - DataGrid  -->
+    <sys:String x:Key="FreelancersDialog_DataGrid_Name">Имя</sys:String>
+    <sys:String x:Key="FreelancersDialog_DataGrid_Skills">Навыки</sys:String>
+    <sys:String x:Key="FreelancersDialog_DataGrid_Rating">Рейтинг</sys:String>
+    <sys:String x:Key="FreelancersDialog_DataGrid_Description">Описание</sys:String>
+    <!--#endregion-->
+
+    <!--#region  Диалоговые окна-->
+    <!--  Описание заказа  -->
+    <sys:String x:Key="Order_Title">Название</sys:String>
+    <sys:String x:Key="Order_Description">Описание</sys:String>
+    <sys:String x:Key="Order_Price">Цена</sys:String>
+    <sys:String x:Key="Order_Category">Категория</sys:String>
+    <sys:String x:Key="Order_FullDescription">Полное описание</sys:String>
+
+    <!--  Описание фрилансера  -->
+    <sys:String x:Key="Freelancer_Name">Имя</sys:String>
+    <sys:String x:Key="Freelancer_Skills">Навыки</sys:String>
+    <sys:String x:Key="Freelancer_Rating">Рейтинг</sys:String>
+    <sys:String x:Key="Freelancer_Description">Описание</sys:String>
+    <!--#endregion-->
+
+    <!--#region Профиль пользователя-->
+    <sys:String x:Key="MainWindow_Profile_Header">Личный кабинет</sys:String>
+    <sys:String x:Key="MainWindow_Profile_Username">Имя пользователя</sys:String>
+    <sys:String x:Key="MainWindow_Profile_Password">Новый пароль</sys:String>
+    <sys:String x:Key="MainWindow_Profile_Language">Язык интерфейса</sys:String>
+    <sys:String x:Key="MainWindow_Profile_Theme">Тема оформления</sys:String>
+    <sys:String x:Key="MainWindow_Profile_Save">Сохранить</sys:String>
+    <sys:String x:Key="MainWindow_Profile_GoBack">Назад</sys:String>
+    <!--#endregion-->
+</ResourceDictionary>

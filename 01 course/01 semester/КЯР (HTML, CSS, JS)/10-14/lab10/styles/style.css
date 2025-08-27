@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+.cell1,
+.cell2,
+.cell3 {
+  background-color: aqua;
+  border: 2px solid #309490;
+  border-radius: 10px;
+}
+
+header {
+  width: 100vw;
+  text-align: center;
+  font-size: 2em;
+}
+
+.cell1,
+.cell2,
+.cell3 {
+  width: 32.5%;
+  margin-top: 13px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.cell1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cell1 video {
+  width: 95%;
+  border-radius: 10px;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+.cell2 {
+  text-align: justify;
+}
+
+.cell2 h1 {
+  text-align: center;
+  line-height: 0.4em;
+}
+
+.cell2 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  padding: 0 5px 0 5px;
+}
+
+
+.cell3 audio {
+  width: 22vw;
+  height: 50px;
+  margin: 0 0 0 10px;
+}
+
+.cell3 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  float: left;
+  margin-left: 5px;
+}
+
+.cell1 h3,
+.cell3 h3,
+.cell3 h1 {
+  line-height: 0;
+  text-align: center;
+}
+
+.cell3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+nav a {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background-color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #1a1a1a;
+}
+
+.container-of-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-of-images figcaption {
+  text-align: center;
+}
+
+.container-of-images img,
+.container-of-images .imgs {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-of-images .imgs {
+  flex-basis: 25%;
+}
+
+@media screen and (max-width: 960px) {
+
+  header,
+  .cell1,
+  .cell2,
+  .cell3 {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .cell3 audio {
+    width: 80%;
+  }
+
+  .cell3 .music {
+    display: inline;
+    width: 100%;
+  }
+
+  .cell3 img {
+    float: right;
+    position: absolute;
+  }
+
+  .cell3 audio {
+    margin: 0 10px 0 6%;
+  }
+
+  .container-of-images {
+    flex-direction: column;
+  }
+
+  .container-of-images .imgs {
+    margin: 0;
+  }
+
+  .container-of-images img,
+  .container-of-images .imgs {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-of-images figcaption {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  figcaption {
+    color: red;
+  }
+}

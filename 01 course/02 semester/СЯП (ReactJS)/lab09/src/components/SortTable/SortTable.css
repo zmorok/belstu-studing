@@ -1,0 +1,54 @@
+@import url('../fonts.css');
+
+/* SortTable */
+.sort-table-content {
+  width: 95%;
+  margin-bottom: 15px;
+}
+
+.sort-table-content h1 {
+  font-family: 'Montserrat';
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 0.3;
+}
+
+.sort-table {
+  width: 100%;
+  border-collapse: collapse;
+  height: 98vh;
+  margin-top: 5px;
+}
+
+.sort-table th,
+.sort-table td {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.sort-table td {
+  font-family: 'Didact Gothic';
+}
+
+.sort-table td:first-child {
+  word-break: break-all;
+}
+
+.sort-table th {
+  font-family: 'Montserrat';
+  cursor: pointer;
+  user-select: none;
+}
+
+.sort-table th:hover {
+  background-color: #f2f2f2;
+}
+
+.sort-table td:hover {
+  background-color: #ffffff;
+}
+
+.sort-table tr:hover {
+  background-color: #dbdbdb;
+}

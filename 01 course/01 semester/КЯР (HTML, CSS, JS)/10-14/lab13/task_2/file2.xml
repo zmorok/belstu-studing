@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xslt/sort.xslt"?>
+<students>
+  <student>
+    <name>Студент 1</name>
+    <grade>5</grade>
+  </student>
+  <student>
+    <name>Студент 2</name>
+    <grade>9</grade>
+  </student>
+  <student>
+    <name>Студент 3</name>
+    <grade>3</grade>
+  </student>
+  <student>
+    <name>Студент 4</name>
+    <grade>9</grade>
+  </student>
+  <student>
+    <name>Студент 5</name>
+    <grade>6</grade>
+  </student>
+  <student>
+    <name>Студент 6</name>
+    <grade>7</grade>
+  </student>
+  <student>
+    <name>Студент 7</name>
+    <grade>3</grade>
+  </student>
+  <student>
+    <name>Студент 8</name>
+    <grade>5</grade>
+  </student>
+  <student>
+    <name>Студент 9</name>
+    <grade>10</grade>
+  </student>
+</students>

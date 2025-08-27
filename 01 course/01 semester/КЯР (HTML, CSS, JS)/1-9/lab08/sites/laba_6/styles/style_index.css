@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('../images/it_bstu.jpg') no-repeat fixed;
+    background-size: 15%;
+    background-position: top right;
+}
+h1 {
+    color:blueviolet;
+    text-align: center;
+}
+h3 {
+    font-style: italic;
+}
+p {
+    text-align: center;
+}
+body > p {
+    font-family: 'Arial Narrow';
+    color: #FFBA00;
+    font-size: 1.5em;
+}
+p:nth-of-type(2) {
+    font-family: 'Times New Roman';
+    color:#000080;
+    font-size: 1.2em;
+}
+p:nth-of-type(3) {
+    font-family: 'Arial Black';
+    color: #006400;
+    font-size: 1.1em;
+}
+mark {
+    font-family:'Segoe UI';
+    background-color: transparent;
+    text-decoration: underline;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+table td, th {
+    border: 3px solid black;
+}
+table caption {
+    font-size: larger;
+    font-weight: 900;
+    font-style: italic;
+}
+.vitamins_ol li {
+    width: auto;
+}
+.vitamins_ol ul:first-of-type li{
+    list-style-type: none;
+    background-image: url('../images/black_square.png');
+    background-repeat: no-repeat;
+    background-size: 10px 10px; 
+    padding-left: 15px;  
+}
+.vitamins_ol ul:nth-of-type(2) li{
+    list-style-type: none;
+    background-image: url('../images/black_circle.png');
+    background-repeat: no-repeat;
+    background-size: 20px 15px; 
+    padding-left: 20px;  
+}
+.vitamins_ol ul:nth-of-type(3) li{
+    list-style-type: none;
+    background-image: url('../images/stop_circle.png');
+    background-repeat: no-repeat;
+    background-size: 20px 15px; 
+    padding-left: 20px;  
+}
+.container-of-2-and-2 {
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+}
+.container-of-2-and-2 .first-container, .second-container{
+    display: flex;
+}
+.container-of-2-and-2 .first-container p, .second-container p{
+    text-align: justify;
+    font-size: 1.2em;
+}
+.container-of-2-and-2 img{
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+.span-ul {
+    font-size:30px;
+    text-decoration: underline;
+}
+.span-li {
+    font-weight: 900;
+    font-size: 15px;
+}

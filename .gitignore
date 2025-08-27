@@ -1,0 +1,11 @@
+.env
+
+# ignore Visual Studio temporary files and build results
+.vs/
+*.suo
+*.user
+*.pdb
+*.suo
+
+[Bb]in/
+[Oo]bj/

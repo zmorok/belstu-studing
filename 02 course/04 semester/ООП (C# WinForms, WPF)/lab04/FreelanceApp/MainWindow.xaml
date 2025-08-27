@@ -1,0 +1,90 @@
+﻿<Window
+    x:Class="FreelanceApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="{DynamicResource MainWindow_Title}"
+    Width="1100"
+    Height="635"
+    Icon="/Icons/Users.ico"
+    WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <DockPanel>
+
+            <Border DockPanel.Dock="Top" Style="{DynamicResource TopPanelStyle}">
+                <TextBlock
+                    Name="WelcomeText"
+                    Style="{DynamicResource WelcomeTextStyle}"
+                    Text="{DynamicResource MainWindow_Header}" />
+            </Border>
+
+            <Grid DockPanel.Dock="Left" Style="{DynamicResource SideMenuStyle}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Button
+                    Grid.Row="0"
+                    Width="180"
+                    Command="{Binding ProfileCommand}"
+                    Content="{DynamicResource MainWindow_Profile_Header}"
+                    Style="{DynamicResource LanguageButtonStyle}" />
+
+                <Button
+                    Grid.Row="1"
+                    Command="{Binding OrdersCommand}"
+                    Content="{DynamicResource MainWindow_SideBar_Btn_Orders}"
+                    Style="{DynamicResource MenuButtonStyle}" />
+                <Button
+                    Grid.Row="2"
+                    Command="{Binding FreelancersCommand}"
+                    Content="{DynamicResource MainWindow_SideBar_Btn_Freelancers}"
+                    Style="{DynamicResource MenuButtonStyle}" />
+
+                <StackPanel
+                    Name="AdminPanel"
+                    Grid.Row="3"
+                    Style="{DynamicResource AdminPanelStyle}">
+
+                    <TextBlock Style="{DynamicResource AdminPanelHeaderStyle}" Text="{DynamicResource MainWindow_AdminPanel_Title}" />
+
+                    <Grid Margin="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Button
+                            Grid.Column="0"
+                            Command="{Binding OrdersAdminCommand}"
+                            Content="{DynamicResource MainWindow_AdminPanel_Btn_Orders}"
+                            Style="{DynamicResource AdminPanelButtonStyle}" />
+                    </Grid>
+
+                    <Grid Margin="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Button
+                            Grid.Column="0"
+                            Command="{Binding FreelancersAdminCommand}"
+                            Content="{DynamicResource MainWindow_AdminPanel_Btn_Freelancers}"
+                            Style="{StaticResource AdminPanelButtonStyle}" />
+                    </Grid>
+                </StackPanel>
+
+                <Button
+                    Grid.Row="5"
+                    Command="{Binding LogoutCommand}"
+                    Content="{DynamicResource MainWindow_SideBar_Btn_Back}"
+                    Style="{DynamicResource LogoutButtonStyle}" />
+            </Grid>
+
+            <Border Style="{DynamicResource MainContentBorderStyle}">
+                <ContentControl Name="MainContent" Style="{DynamicResource MainContentStyle}" />
+            </Border>
+        </DockPanel>
+    </Grid>
+</Window>

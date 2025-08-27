@@ -1,0 +1,247 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header header header" "main main aside" "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 65px 100vh 65px;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header;
+}
+header > a {
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 30px;
+  margin-left: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.5s, color 0.5s, -webkit-text-decoration 0.5s;
+  transition: text-decoration 0.5s, background-color 0.5s, color 0.5s;
+  transition: text-decoration 0.5s, background-color 0.5s, color 0.5s, -webkit-text-decoration 0.5s;
+}
+header > a:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+header nav {
+  width: 450px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding-top: 10px;
+  height: 30px;
+  width: 100px;
+}
+header nav a:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+main {
+  grid-area: main;
+}
+main .content {
+  background-color: #333;
+  margin: 10px;
+  padding-bottom: 5px;
+  border-radius: 25px 25px 125px 125px;
+}
+main .content .content-text {
+  display: flex;
+  flex-direction: row;
+}
+main .content .content-text p {
+  height: 284.44px;
+  margin: 5px;
+  text-align: justify;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  color: rgb(192, 192, 192);
+  background-color: #494949;
+  font-size: 0.9em;
+  padding: 10px 10px 0 10px;
+  border-radius: 20px;
+  transform: scale(1);
+  transition: transform 0.5s;
+  overflow: hidden;
+}
+main .content .content-text p:hover {
+  position: relative;
+  z-index: 100;
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: 0.5s;
+}
+main .content .content-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 42%;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+main .content .content-image img {
+  width: calc((100% - 10px) / 5);
+  height: calc((100% - 10px) / 5);
+  flex-basis: 25%;
+  border-radius: 50%;
+  transform: translateY(0) scale(1);
+  transition: border-radius 0.5s, transform 0.5s;
+  margin-right: 10px;
+}
+main .content .content-image img:last-child {
+  margin-right: 0;
+}
+main .content .content-image img:hover {
+  z-index: 100;
+  border-radius: 10%;
+  transform: translateY(-55px) scale(1.5);
+  transition: 0.5s;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #333;
+  margin: 10px;
+  border-radius: 25px;
+}
+aside form {
+  margin: 5px;
+  padding: 5px;
+  background-color: #494949;
+  border-radius: 20px;
+}
+aside form label {
+  color: rgb(192, 192, 192);
+  padding-left: 10px;
+}
+aside form div {
+  margin-bottom: 10px;
+}
+aside form input {
+  float: right;
+  width: 170px;
+  border-radius: 10px;
+  height: 20px;
+  padding-left: 5px;
+  margin-right: 10px;
+  background-color: white;
+  color: #494949;
+  transition: background-color 0.5s, color 0.5s;
+}
+aside form input:not(:-moz-placeholder) {
+  background-color: #494949;
+  color: white;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+aside form input:not(:placeholder-shown), aside form input:focus {
+  background-color: #494949;
+  color: white;
+  transition: 0.5s;
+}
+aside form input::-moz-placeholder {
+  text-align: center;
+}
+aside form input::placeholder {
+  text-align: center;
+}
+aside form .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+aside form .buttons button {
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin: 0 10px 0 10px;
+  background-color: black;
+  color: white;
+  transform: scale(1);
+  transition: background-color 0.5s, color 0.5s, transform 0.5s;
+  border: none;
+  cursor: pointer;
+}
+aside form .buttons button:hover {
+  background-color: whitesmoke;
+  color: black;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+aside .aside-content {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+aside .aside-content-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+aside .aside-content-row img {
+  width: 160px;
+  height: 160px;
+}
+aside .aside-content-row p {
+  color: rgb(192, 192, 192);
+  text-align: justify;
+  padding-left: 5px;
+  font-size: 0.96rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  grid-area: footer;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+footer h4 {
+  padding-top: 15px;
+}
+
+h1 {
+  display: inline-block;
+  margin-left: 40%;
+  text-align: center;
+  transition: color 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+h1:hover {
+  color: white;
+  transition: 0.5s;
+}

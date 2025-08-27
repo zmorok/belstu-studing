@@ -1,0 +1,43 @@
+@import url('../fonts.css');
+
+.order-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.order h1,
+.order h2 {
+  font-family: 'Montserrat';
+  line-height: 0.3;
+  margin-bottom: 20px;
+}
+
+.order-products-page {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.ordered-product {
+  border: 1px solid #ddd;
+  background-color: #b9b9b9;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Nunito';
+  text-align: center;
+}
+
+.ordered-product img {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(2px 2px 7px black);
+}

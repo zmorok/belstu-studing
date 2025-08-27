@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лаба 5</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      pointer-events: none;
+    }
+
+    td {
+      border: 3px dashed brown;
+      text-align: center;
+      width: 50px;
+      height: 25px;
+    }
+
+    .container-span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container-span span {
+      margin: 10px 0 5px 0;
+    }
+
+    tr:first-child {
+      font-weight: 900;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-span">
+    <span id="span_1">Первый тег span</span>
+    <span>Второй тег span</span>
+    <span>Третий тег span</span>
+  </div>
+  <table>
+    <tr>
+      <td>Дисциплина</td>
+      <td>Первая отметка</td>
+      <td>Вторая отметка</td>
+    </tr>
+    <tr>
+      <td>ОАИП</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>КЯР</td>
+      <td>7</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>МатАн</td>
+      <td>8</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>ЛАиАГ</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+  </table>
+
+  <script>
+    console.log(document.querySelectorAll('*'))
+    console.log(document.all)
+
+    console.log(document.body.childNodes)
+
+    console.log(document.querySelectorAll('span')[0].textContent)
+    console.log(document.getElementsByTagName('span')[0].textContent)
+    console.log(document.getElementById('span_1').textContent)
+
+    let sum = 0
+    let sr_mark
+    let table = document.getElementsByTagName('table')[0]
+    let table_rows = table.rows
+    console.group('Средние оценки по дисциплинам')
+    for (let i = 1; i < table_rows.length; i++) {
+      for (let k = 1; k < table_rows[i].cells.length; k++) {
+        sum += parseInt(table_rows[i].cells[k].textContent)
+      }
+      sr_mark = sum / (table_rows[i].cells.length - 1)
+      console.log(
+        'Средняя оценка по',
+        table_rows[i].cells[0].textContent,
+        ' = ',
+        sr_mark
+      )
+      sum = 0
+    }
+    console.groupEnd
+  </script>
+</body>
+
+</html>

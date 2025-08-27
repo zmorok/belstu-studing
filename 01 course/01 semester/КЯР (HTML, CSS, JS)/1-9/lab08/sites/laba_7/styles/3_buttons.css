@@ -1,0 +1,43 @@
+.container-3 {
+    display: flex;
+    justify-content: space-between;
+    height: 764px;
+    align-items: center;
+}
+.container-3 button{
+    height: 50px;
+    width: 200px;
+    margin: 0 20px 0 20px; 
+}
+
+button:first-child:hover {
+    color: white;
+    background-color: black;
+    transition: .4s;
+}
+
+button:nth-child(2):hover {
+    border: 6px solid red;
+    outline: 6px solid yellow;
+    transition: .4s;
+}
+
+button:nth-child(3):hover {
+    border-top: 6px solid green;
+    border-bottom: 6px solid green;
+    border-right: none;
+    border-left: none;
+    transition: .4s;
+}
+
+button:nth-child(4):hover {
+    border-right: 6px solid blue;
+    border-left: 6px solid blue;
+    border-top: none;
+    border-bottom: none;
+    transition: .4s;
+}
+
+button:nth-child(5):hover {
+    background: radial-gradient(yellow 10%, purple 50%, cyan);
+}

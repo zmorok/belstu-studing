@@ -1,0 +1,94 @@
+@import url('../fonts.css');
+
+/* Catalog */
+.catalog-content {
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+.catalog-content h1 {
+  text-align: center;
+  font-family: 'Montserrat';
+  line-height: 0.3;
+  margin-bottom: 0;
+}
+
+.catalog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Nunito';
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product div {
+  margin-bottom: 10px;
+}
+
+.product .price {
+  font-weight: bold;
+}
+
+.product .old-price {
+  text-decoration: line-through;
+  color: #5e5e5e;
+}
+
+.product .new {
+  color: green;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.product .name {
+  font-weight: 900;
+}
+
+.product .discount {
+  font-weight: bold;
+  text-align: center;
+  color: red;
+}
+
+.sort-buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 20px 0;
+}
+
+.sort-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 20px;
+  background-color: transparent;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.02em;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.sort-buttons button:hover {
+  background-color: #6d5a42;
+  color: white;
+  transition: all .2s ease-in-out;
+}

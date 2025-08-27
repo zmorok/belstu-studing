@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE faculties  [
+  <!ELEMENT faculties (head, specialities, informations)>
+  <!ELEMENT head (faculty+)>
+  <!ELEMENT faculty (#PCDATA)>
+  <!ELEMENT specialities (speciality+)>
+  <!ELEMENT speciality (#PCDATA)>
+  <!ELEMENT informations (info+)>
+  <!ELEMENT info (#PCDATA)>
+  <!ENTITY fit "фит">
+  <!ENTITY pim "пим">
+  <!ENTITY htit "хтит">
+  <!ENTITY ief "иэф">
+]>

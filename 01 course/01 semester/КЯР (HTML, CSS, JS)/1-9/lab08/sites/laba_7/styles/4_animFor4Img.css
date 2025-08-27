@@ -1,0 +1,100 @@
+img {
+    width: 250px;
+    height: 250px;
+}
+.container-4 {
+    height: 764px;
+    display: flex;
+    align-items: center;
+}
+
+.container-4 .container-anim {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    left: 40%;
+}
+
+@keyframes forFirst{
+    0% { transform: perspective(300px) rotateY(45deg); }
+    10%{ transform: perspective(300px) rotateY(45deg); }
+    50%{ transform: rotateY(0deg); }
+    80%{ transform: translateX(-350px); }
+    90%{ transform: translateX(-350px); }
+    100% { transform: translateX(-350px); }
+}
+@keyframes forSecond{
+    0% { transform: perspective(300px) rotateY(45deg); }
+    10% { transform: perspective(300px) rotateY(45deg); }
+    50%{ transform: rotateY(0deg); }
+    80% {
+        transform: translateX(-100px);
+        filter: blur(0px);
+    }
+    90% {
+        transform: translateX(-100px);
+        filter: blur(10px);
+    }
+    100% {
+        transform: translateX(-100px);
+        filter: blur(10px);
+    }
+}
+@keyframes forThird{
+    0% { transform: perspective(300px) rotateY(45deg); }
+    10%{ transform: perspective(300px) rotateY(45deg); }
+    50%{ transform: rotateY(0deg); }
+    80% {
+        transform: translateX(150px);
+        filter: grayscale(0);
+    }
+    90% {
+        transform: translateX(150px);
+        filter: grayscale(1);
+    }
+    100%{
+        transform: translateX(150px);
+        filter: grayscale(1);
+    }
+}
+@keyframes forFourth{
+    0% { transform: perspective(300px) rotateY(45deg); }
+    10% { transform: perspective(300px) rotateY(45deg); }
+    50%{ transform: rotateY(0deg); }
+    80% {
+        transform: translateX(400px);
+        filter: invert(0);
+    }
+    90%{
+        transform: translateX(400px);
+        filter: invert(1);
+    }
+    100%{
+        transform: translateX(400px);
+        filter: invert(1);
+    }
+}
+
+.container-4 img:nth-child(1), .container-4 img:nth-child(2),.container-4 img:nth-child(3),.container-4 img:nth-child(4) {
+    position: absolute;
+    border: 1px solid black;
+} 
+.container-4 img:nth-child(1) {
+    z-index: 0;
+    animation: forFirst 3s infinite alternate;
+}
+.container-4 img:nth-child(2) {
+    left: 20px;
+    z-index: 1;
+    animation: forSecond 3s infinite alternate;
+}
+.container-4 img:nth-child(3) {
+    left: 40px;
+    z-index: 2;
+    animation: forThird 3s infinite alternate;
+}
+.container-4 img:nth-child(4) {
+    left: 60px;
+    z-index: 3;
+    animation: forFourth 3s infinite alternate;
+}

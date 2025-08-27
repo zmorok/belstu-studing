@@ -1,0 +1,85 @@
+body {
+    background-image: url("images/background_beauty.jpg");
+}
+.form-container {
+    border: thin solid grey;
+    background-color: indigo;
+    width: 450px;
+    height: 385px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22vh;
+    border-radius: 12.5px;
+}
+p {
+    margin-left: 15px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.6em;
+    line-height: 0px;
+}
+.inputbox {
+    position: relative;
+    margin-top: 10px;
+    color: #fff;
+}
+.inputbox input {
+    width: 200px;
+    display: inline;
+    float: right;
+    margin-right: 10px;
+    background-color: rgba(255,255,255,.5);
+    color: rgba(255,255,255,1);
+    box-shadow: inset 0 0 10px rgba(255,255,255, .75);
+    border-radius: 5px;
+}
+.inputbox input[type='text']:focus{
+    background-color: #fff;
+    color: black;
+}
+.inputbox select {
+    width: 150px;
+    display: inline;
+    float: right;
+    margin-right: 18px;
+}
+.inputbox label {
+    padding-left: 10px;
+    pointer-events: none;
+    font-size: 1.2em;
+}
+.checkbox-gender {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 38px;
+    color: #fff;
+    font-size: 1.2em;
+}
+.inputbox #registration-date {
+    width: 150px;
+    display: inline;
+    float: right;
+    margin-right: 14px;
+    background-color: #fff;
+    color: black;
+    border-radius: 0px;
+}
+.buttons {
+    margin-top: 15px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+button {
+    cursor: pointer;
+    box-shadow: 0 0 4px white;
+    width: 125px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #010080;
+    color: #fff;
+}
+

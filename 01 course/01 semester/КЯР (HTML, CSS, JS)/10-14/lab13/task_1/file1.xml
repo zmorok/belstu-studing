@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xslt/catalog.xslt"?>
+<catalog>
+<book>
+    <name>Книга 4</name>
+    <author>Автор 2</author>
+    <price>10 $</price>
+  </book>
+  <book>
+    <name>Книга 2</name>
+    <author>Автор 4</author>
+    <price>30 $</price>
+  </book>
+  <book>
+    <name>Книга 1</name>
+    <author>Автор 3</author>
+    <price>40 $</price>
+  </book>
+  <book>
+    <name>Книга 3</name>
+    <author>Автор 1</author>
+    <price>20 $</price>
+  </book>
+</catalog>

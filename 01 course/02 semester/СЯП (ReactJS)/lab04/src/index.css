@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.header {
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#noteInput {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto 0 0;
+}
+
+#addNoteBtn {
+  height: 100%;
+  width: 150px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+#notesList {
+  list-style-type: decimal;
+  padding: 0;
+}
+
+
+.note {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 96%);
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.note p {
+  margin: 0 auto 0 0;
+  line-height: 0;
+}
+
+.deleteNoteBtn,
+.editNoteBtn {
+  background-color: #ff5b5b;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>UI Components Showcase</title>
+  <style>
+    :root {
+      /* Цветовая палитра */
+      --color-bg: #FAF9F6;
+      --color-light: #D1BFA5;
+      --color-primary: #8C6B52;
+      --color-accent: #A49689;
+      --color-dark: #3D3B38;
+
+      /* Типографика */
+      --font-family: Arial, sans-serif;
+      --font-size: 16px;
+
+      /* Сетка и отступы */
+      --space-unit: 8px;
+
+      /* Скругления */
+      --border-radius: 4px;
+    }
+
+    body {
+      margin: 0;
+      padding: calc(var(--space-unit) * 2);
+      background: var(--color-bg);
+      font-family: var(--font-family);
+      font-size: var(--font-size);
+      color: var(--color-dark);
+      line-height: 1.5;
+    }
+
+    h1,
+    h2 {
+      margin: calc(var(--space-unit) * 2) 0 var(--space-unit) 0;
+    }
+
+    section {
+      border-bottom: 1px solid var(--color-light);
+      padding-bottom: calc(var(--space-unit) * 2);
+      margin-bottom: calc(var(--space-unit) * 2);
+    }
+
+    /* Палитра */
+    #palette {
+      display: flex;
+      gap: var(--space-unit);
+    }
+
+    .swatch {
+      width: 80px;
+      height: 80px;
+      border-radius: var(--border-radius);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      color: var(--color-dark);
+      font-size: 12px;
+      padding: 4px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .swatch[data-hex="#FAF9F6"] {
+      background: #FAF9F6;
+    }
+
+    .swatch[data-hex="#D1BFA5"] {
+      background: #D1BFA5;
+    }
+
+    .swatch[data-hex="#8C6B52"] {
+      background: #8C6B52;
+      color: #FFF;
+    }
+
+    .swatch[data-hex="#A49689"] {
+      background: #A49689;
+      color: #FFF;
+    }
+
+    .swatch[data-hex="#3D3B38"] {
+      background: #3D3B38;
+      color: #FFF;
+    }
+
+    /* Общий класс для кнопок */
+    .btn {
+      display: inline-block;
+      padding: 16px 32px;
+      /* 2*8px vertical, 4*8px horizontal */
+      border: none;
+      border-radius: 4px;
+      /* var(--border-radius) */
+      font-family: var(--font-family);
+      font-size: 16px;
+      /* var(--font-size) */
+      cursor: pointer;
+      margin: var(--space-unit);
+    }
+
+    .btn--primary {
+      background: var(--color-primary);
+      color: #FFF;
+    }
+
+    .btn--secondary {
+      background: var(--color-light);
+      color: var(--color-dark);
+    }
+
+    .btn--tertiary {
+      background: transparent;
+      color: var(--color-primary);
+      border: 1px solid var(--color-primary);
+    }
+
+    .btn--cta {
+      background: var(--color-accent);
+      color: #FFF;
+    }
+
+    .btn--fab {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-accent);
+      color: #FFF;
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      font-size: 24px;
+    }
+
+    /* Header & Footer */
+    .header,
+    .footer {
+      background: var(--color-primary);
+      padding: calc(var(--space-unit) * 2);
+      color: #FFF;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer {
+      text-align: center;
+    }
+
+    /* Поиск */
+    .search input[type="search"] {
+      width: 100%;
+      padding: 8px;
+      /* var(--space-unit) */
+      border: 1px solid var(--color-light);
+      border-radius: 4px;
+      /* var(--border-radius) */
+      font-size: 16px;
+      /* var(--font-size) */
+    }
+
+    /* Карточка */
+    .card {
+      background: #FFF;
+      border-radius: 4px;
+      /* var(--border-radius) */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+      /* 3*8px */
+      max-width: 300px;
+    }
+
+    .card__title {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .card__text {
+      font-size: 14px;
+      color: var(--color-dark);
+    }
+
+    /* Формы */
+    .form-group {
+      margin-bottom: 16px;
+      /* 2*8px */
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      /* var(--space-unit) */
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      /* var(--space-unit) */
+      border: 1px solid var(--color-light);
+      border-radius: 4px;
+      /* var(--border-radius) */
+      font-size: 16px;
+      /* var(--font-size) */
+    }
+
+    /* Фильтры */
+    .filters {
+      display: flex;
+      gap: 8px;
+      /* var(--space-unit) */
+    }
+
+    /* Выпадающий список */
+    .dropdown select {
+      padding: 8px;
+      /* var(--space-unit) */
+      border-radius: 4px;
+      /* var(--border-radius) */
+      font-size: 16px;
+      /* var(--font-size) */
+    }
+
+    /* Слайдер */
+    .slider input[type="range"] {
+      width: 100%;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Палитра -->
+  <section id="palette">
+    <h1>Цветовая палитра</h1>
+    <div class="swatch" data-hex="#FAF9F6"><span>#FAF9F6</span></div>
+    <div class="swatch" data-hex="#D1BFA5"><span>#D1BFA5</span></div>
+    <div class="swatch" data-hex="#8C6B52"><span>#8C6B52</span></div>
+    <div class="swatch" data-hex="#A49689"><span>#A49689</span></div>
+    <div class="swatch" data-hex="#3D3B38"><span>#3D3B38</span></div>
+  </section>
+
+  <!-- Компоненты UI -->
+  <section id="components">
+    <h1>Компоненты интерфейса</h1>
+
+    <!-- Header -->
+    <section>
+      <h2>Header</h2>
+      <p>background-color: #8C6B52; padding: 16px; color: #FFF; font-family: Arial; border-radius: 4px;</p>
+      <div class="header">
+        <h3>Логотип</h3>
+        <nav><button class="btn btn--secondary">Меню</button></nav>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+      <h2>Footer</h2>
+      <p>background-color: #8C6B52; padding: 16px; color: #FFF; text-align: center; border-radius: 4px;</p>
+      <div class="footer">© 2025 Компания</div>
+    </section>
+
+    <!-- Search -->
+    <section>
+      <h2>Поисковая строка</h2>
+      <p>border: 1px solid #D1BFA5; border-radius: 4px; padding: 8px; width: 100%; font-size: 16px;</p>
+      <div class="search">
+        <input type="search" placeholder="Поиск...">
+      </div>
+    </section>
+
+    <!-- Buttons -->
+    <section>
+      <h2>Primary Button</h2>
+      <p>background-color: #8C6B52; color: #FFF; border-radius: 4px; padding: 16px 32px; font-size: 16px;</p>
+      <button class="btn btn--primary">Primary</button>
+    </section>
+
+    <section>
+      <h2>Secondary Button</h2>
+      <p>background-color: #D1BFA5; color: #3D3B38; border-radius: 4px; padding: 16px 32px; font-size: 16px;</p>
+      <button class="btn btn--secondary">Secondary</button>
+    </section>
+
+    <section>
+      <h2>Tertiary Button</h2>
+      <p>background: transparent; color: #8C6B52; border: 1px solid #8C6B52; border-radius: 4px; padding: 16px 32px;
+        font-size: 16px;</p>
+      <button class="btn btn--tertiary">Tertiary</button>
+    </section>
+
+    <section>
+      <h2>CTA Button</h2>
+      <p>background-color: #A49689; color: #FFF; border-radius: 4px; padding: 16px 32px; font-size: 16px;</p>
+      <button class="btn btn--cta">Call to Action</button>
+    </section>
+
+    <section>
+      <h2>FAB Button</h2>
+      <p>background-color: #A49689; color: #FFF; width: 56px; height: 56px; border-radius: 50%; font-size: 24px;
+        position: fixed;</p>
+      <button class="btn btn--fab">+</button>
+    </section>
+
+    <!-- Card -->
+    <section>
+      <h2>Карточка</h2>
+      <p>background: #FFF; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 24px; max-width: 300px;
+      </p>
+      <div class="card">
+        <h3 class="card__title">Название товара</h3>
+        <p class="card__text">Краткое описание продукта или услуги.</p>
+        <button class="btn btn--cta">Заказать</button>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section>
+      <h2>Форма регистрации / авторизации</h2>
+      <p>input/textarea/select: border 1px solid #D1BFA5; border-radius: 4px; padding: 8px; font-size: 16px;</p>
+      <form>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Введите e-mail">
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль</label>
+          <input type="password" id="password" placeholder="Введите пароль">
+        </div>
+        <button class="btn btn--primary">Войти</button>
+        <button class="btn btn--secondary" type="reset">Отмена</button>
+      </form>
+    </section>
+
+    <!-- Filters -->
+    <section>
+      <h2>Фильтры</h2>
+      <p>display: flex; gap: 8px; font-size: 16px;</p>
+      <div class="filters">
+        <label><input type="checkbox"> Фильтр 1</label>
+        <label><input type="checkbox"> Фильтр 2</label>
+        <label><input type="checkbox"> Фильтр 3</label>
+      </div>
+    </section>
+
+    <!-- Dropdown -->
+    <section>
+      <h2>Выпадающий список</h2>
+      <p>padding: 8px; border-radius: 4px; font-size: 16px;</p>
+      <div class="dropdown">
+        <select>
+          <option>Опция 1</option>
+          <option>Опция 2</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Slider -->
+    <section>
+      <h2>Слайдер</h2>
+      <p>width: 100%; margin-top: 8px;</p>
+      <div class="slider">
+        <input type="range" min="0" max="100" value="50">
+      </div>
+    </section>
+
+  </section>
+</body>
+
+</html>

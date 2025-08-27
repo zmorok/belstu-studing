@@ -1,0 +1,155 @@
+﻿<UserControl
+    x:Class="FreelanceApp.FreelancersView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:FreelanceApp.Services.Converters">
+
+    <UserControl.Resources>
+        <local:RatingConverter
+            x:Key="RatingConverter"
+            Max="5"
+            Min="0" />
+    </UserControl.Resources>
+
+    <Grid Background="Transparent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--  Панель фильтров  -->
+        <StackPanel
+            Grid.Column="0"
+            Margin="15"
+            VerticalAlignment="Top">
+            <Border Style="{DynamicResource BorderStyle}">
+                <StackPanel Style="{DynamicResource StackPanelStyle}">
+                    <TextBlock Style="{DynamicResource PanelHeaderStyle}" Text="{DynamicResource FreelancersView_Filters_Header}" />
+
+                    <TextBlock
+                        Margin="10,5,0,2"
+                        Foreground="{DynamicResource Fg_Brush}"
+                        Text="{DynamicResource FreelancersView_Filters_Name}" />
+                    <TextBox Name="NameBox" Style="{DynamicResource PanelTextBoxStyle}" />
+
+                    <TextBlock
+                        Margin="10,5,0,2"
+                        Foreground="{DynamicResource Fg_Brush}"
+                        Text="{DynamicResource FreelancersView_Filters_Skill}" />
+                    <TextBox Name="SkillBox" Style="{DynamicResource PanelTextBoxStyle}" />
+
+                    <TextBlock
+                        Margin="10,5,0,2"
+                        Foreground="{DynamicResource Fg_Brush}"
+                        Text="{DynamicResource FreelancersView_Filters_Rating}" />
+                    <TextBox Name="MinRatingBox" Style="{DynamicResource PanelTextBoxStyle}">
+                        <TextBox.Text>
+                            <Binding
+                                Converter="{StaticResource RatingConverter}"
+                                Mode="TwoWay"
+                                Path="MaximumRatingThreshold"
+                                UpdateSourceTrigger="PropertyChanged" />
+                        </TextBox.Text>
+                    </TextBox>
+
+                    <TextBlock Style="{DynamicResource PanelHeaderStyle}" Text="{DynamicResource FreelancersView_Sorting_Header}" />
+                    <ComboBox
+                        Name="SortBox"
+                        SelectedIndex="0"
+                        Style="{DynamicResource PanelComboBoxStyle}">
+                        <ComboBoxItem Content="{DynamicResource FreelancersView_Sorting_Type_None}" />
+                        <ComboBoxItem Content="{DynamicResource FreelancersView_Sorting_Type_Name}" />
+                        <ComboBoxItem Content="{DynamicResource FreelancersView_Sorting_Type_Rating}" />
+                    </ComboBox>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Button
+                            Grid.Column="0"
+                            Width="50"
+                            Margin="20,0,0,0"
+                            Command="{Binding SortAscendingCommand}"
+                            Content="🔼"
+                            Style="{DynamicResource PanelButtonStyle}" />
+
+                        <Button
+                            Grid.Column="2"
+                            Width="50"
+                            Margin="0,0,20,0"
+                            Command="{Binding SortDescendingCommand}"
+                            Content="🔽"
+                            Style="{DynamicResource PanelButtonStyle}" />
+                    </Grid>
+
+                    <Button
+                        Command="{Binding ApplyFilterCommand}"
+                        Content="{DynamicResource FreelancersView_Btn_Apply}"
+                        Style="{DynamicResource PanelButtonStyle}" />
+
+                    <Button
+                        Command="{Binding ResetFilterCommand}"
+                        Content="{DynamicResource FreelancersView_Btn_Reset}"
+                        Style="{DynamicResource PanelButtonStyle}" />
+
+                    <Button
+                        Margin="10,5,10,10"
+                        Command="{Binding GoBackCommand}"
+                        Content="{DynamicResource FreelancersView_Btn_Back}"
+                        Style="{DynamicResource PanelButtonStyle}" />
+                </StackPanel>
+            </Border>
+        </StackPanel>
+
+        <!--  Список фрилансеров  -->
+        <ListBox
+            Name="FreelancersList"
+            Grid.Column="1"
+            MouseDoubleClick="Description"
+            Style="{DynamicResource ListBoxDataStyle}">
+
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="{x:Type ListBoxItem}">
+                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+                </Style>
+            </ListBox.ItemContainerStyle>
+
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel
+                        HorizontalAlignment="Center"
+                        IsItemsHost="True"
+                        Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Style="{DynamicResource ListBoxItemBorderStyle}">
+                        <StackPanel>
+                            <TextBlock
+                                Margin="0,0,0,5"
+                                Style="{DynamicResource ListBoxItemStyle}"
+                                Text="{Binding Name}" />
+                            <TextBlock
+                                FontSize="12"
+                                Foreground="Gray"
+                                Text="{Binding Skills}"
+                                TextWrapping="Wrap" />
+                            <TextBlock
+                                Margin="0,5,0,0"
+                                FontWeight="SemiBold"
+                                Foreground="DarkOrange"
+                                Text="{Binding Rating}" />
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

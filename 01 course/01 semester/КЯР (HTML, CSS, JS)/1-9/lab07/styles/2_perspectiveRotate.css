@@ -1,0 +1,26 @@
+.container-2 {
+    display: flex;
+    justify-content: space-evenly;
+    height: 764px;
+    align-items: center;
+}
+.container-2 img {
+    width: 200px;
+    height: 200px;
+}
+
+.container-2 img:nth-child(1) {
+    transform: perspective(300px) rotateX(45deg);
+}
+
+.container-2 img:nth-child(2) {
+    transform: perspective(300px) rotateY(45deg);
+}
+
+.container-2 img:nth-child(3) {
+    transform: perspective(300px) rotateX(45deg);
+}
+
+.container-2 img:nth-child(4) {
+    transform: perspective(300px) rotateY(-45deg);
+}

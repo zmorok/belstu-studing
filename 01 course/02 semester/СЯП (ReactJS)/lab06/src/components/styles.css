@@ -1,0 +1,32 @@
+.color-picker {
+  font-family: Arial, sans-serif;
+  padding-left: 20px;
+}
+
+.selected-color {
+  margin-bottom: 20px;
+}
+
+.color-display {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.saved-colors,
+.color-palette {
+  margin-bottom: 20px;
+}
+
+.color-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-item {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}

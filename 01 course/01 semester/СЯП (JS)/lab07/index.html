@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лаба 7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script type="text/javascript" src="script.js"></script>
+  <div class="container" id="container">
+    <form action="">
+      <textarea name="" cols="15" rows="3">Факультет информационных технологий</textarea><br>
+      <div class="input-text">
+        <input id="surname" type="text" value="Фамилия">
+        <input id="name" type="text" value="Имя">
+      </div>
+      <div class="drop-down-list">
+        <label for="speciality">Специальность</label>
+        <select id="speciality">
+          <option value="ИС">ИС</option>
+          <option value="ЦД">ЦД</option>
+          <option value="ПИ">ПИ</option>
+        </select>
+      </div>
+      <div class="courses">
+        <label>Курс</label><br>
+        <input type="radio" name="course" value="1">
+        <label>1</label>
+        <input type="radio" name="course" value="2">
+        <label>2</label>
+        <input type="radio" name="course" value="3">
+        <label>3</label>
+        <input type="radio" name="course" value="4">
+        <label>4</label>
+      </div>
+      <div class="disciplines">
+        <label>Предметы</label><br>
+        <input type="checkbox" value="СЯП" id="">
+        <label>СЯП</label>
+        <input type="checkbox" value="КЯР" id="">
+        <label>КЯР</label>
+        <input type="checkbox" value="ОАиП" id="">
+        <label>ОАиП</label>
+        <input type="checkbox" value="ВРПО" id="">
+        <label>ВРПО</label>
+        <input type="checkbox" value="Математика" id="">
+        <label>Математика</label>
+      </div>
+      <div class="submit-reset">
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+      </div>
+      <div class="print">
+        <input type="button" onclick="printt()" value="Напечатать">
+      </div>
+    </form>
+  </div>
+  <div class="second-container">
+    <form name="second-form">
+      <select name="second-select" multiple></select>
+    </form>
+  </div>
+</body>
+
+</html>

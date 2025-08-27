@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr;
+    grid-template-rows: 100vh;
+    justify-content: center;
+}
+.container > div {
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+.container h1 {
+    word-wrap: break-word;
+    text-align: center;
+    font-style: italic;
+    padding-top: 15vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
+.container .second p, .container .third p{
+    font-family: 'Popins', sans-serif;
+    font-size: 1.67em;
+    text-align: justify;
+    padding: 10px 20px 0 20px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE faculties [
+  <!ELEMENT faculties (head, specialities, informations)>
+  <!ELEMENT head (faculty+)>
+  <!ELEMENT faculty (#PCDATA)>
+  <!ELEMENT specialities (speciality+)>
+  <!ELEMENT speciality (#PCDATA)>
+  <!ELEMENT informations (info+)>
+  <!ELEMENT info (#PCDATA)>
+  <!ENTITY fit "фит">
+  <!ENTITY pim "пим">
+  <!ENTITY htit "хтит">
+  <!ENTITY ief "иэф">
+]>
+<?xml-stylesheet type="text/css" href="style.css"?> 
+<faculties>
+  <head>
+    <faculty>&fit;</faculty>
+    <faculty>&pim;</faculty>
+    <faculty>&htit;</faculty>
+    <faculty>&ief;</faculty>
+  </head>
+  <specialities>
+    <speciality>1я специальность</speciality>
+    <speciality>2я специальность</speciality>
+    <speciality>3я специальность</speciality>
+    <speciality>4я специальность</speciality>
+  </specialities>
+  <informations>
+    <info>Текст о 1ой специальности</info>
+    <info>Текст о 2ой специальности</info>
+    <info>Текст о 3ей специальности</info>
+    <info>Текст о 4ой специальности</info>
+  </informations>
+</faculties>

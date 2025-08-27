@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>ChessBoard</title>
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    #root {
+      display: flex;
+      justify-content: center;
+    }
+
+    td {
+      height: 50px;
+      width: 50px;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    .notation--left,
+    .notation--right {
+      height: 430px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column-reverse;
+    }
+
+    .notation--top,
+    .notation--bottom {
+      width: 410px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .chess-board {
+      display: grid;
+      grid-template-columns: 10px 410px 10px;
+      grid-template-rows: 20px 430px 20px;
+    }
+
+    .notation-letter,
+    .notation-digit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    function ChessBoard() {
+      const size = 8
+      const board = []
+      const notationsLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+      const notationsDigits = [1, 2, 3, 4, 5, 6, 7, 8]
+      for (let i = 0; i < size; i++) {
+        const row = []
+        for (let j = 0; j < size; j++) {
+          const cellColor = (i + j) % 2 === 0 ? 'white' : 'black'
+          row.push(<td style={{ background: cellColor }}></td>)
+        }
+        board.push(<div className="row">{row}</div>)
+      }
+      return (
+        <div className="chess-board">
+          <div className="empty" />
+          <div className="notation notation--top">
+            {notationsLetters.map((letter) => (
+              <div className="notation-letter">{letter}</div>
+            ))}
+          </div>
+          <div className="empty" />
+          <div className="notation notation--left">
+            {notationsDigits.map((digit) => (
+              <div className="notation-digit">{digit}</div>
+            ))}
+          </div>
+          <div className="board">
+            {board}
+          </div>
+          <div className="notation notation--right">
+            {notationsDigits.map((digit) => (
+              <div className="notation-digit">{digit}</div>
+            ))}
+          </div>
+          <div className="empty" />
+          <div className="notation notation--bottom">
+            {notationsLetters.map((letter) => (
+              <div className="notation-letter">{letter}</div>
+            ))}
+          </div>
+          <div className="empty" />
+        </div>
+      )
+    }
+
+    ReactDOM.render(
+      ChessBoard(),
+      document.getElementById('root')
+    );
+  </script>
+</body>
+
+</html>

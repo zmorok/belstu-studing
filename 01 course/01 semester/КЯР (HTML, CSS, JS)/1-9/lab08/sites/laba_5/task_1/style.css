@@ -1,0 +1,32 @@
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh;
+    margin-left: 7vh;
+}
+
+tr:first-child td:first-child {
+    background-color: #fff;
+    border: none;
+}
+
+tr:first-child {
+    background-color: aqua;
+    text-align: center;
+}
+td:first-child, td:last-child  {
+    background-color: blueviolet;
+    
+}
+
+#second-week {
+    background-color: #fff;
+}
+td {
+    border: medium solid black;
+}
+#empty-cell {
+    display: none;
+}

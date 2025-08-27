@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    border: none;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background: url('/images/gifs/d1.gif') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 50%;
+}
+.container {
+    width: 375px;
+    height: 395px;
+    padding: 10px;
+    margin-top: 10%;
+    border: 2px solid grey;
+    font-family: 'poppins', serif;
+    background-image: linear-gradient(to bottom, #536878 0%, #445969 100%);
+    border-radius: 10px;
+}
+.container form textarea {
+    font-weight: 900;
+    font-size: 20px;
+    width: 185px;
+    max-width: 375px;
+    min-width: 185px;
+    min-height: 75px;
+    max-height: 75px;
+    border: 1px solid grey;
+    text-align: center;
+    background-color: #C1CDC4;
+    border-radius: 5px;
+}
+.container form .input-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.container form .input-text input {
+    border: 1px solid grey;
+    margin-top: 5px;
+    width: 185px;
+    padding: 4px 0 4px 0;
+    background-color: #C1CDC4;
+    border-radius: 5px;
+}
+.drop-down-list {
+    margin-top: 20px;
+}
+.drop-down-list select {
+    width: 55px;
+    background-color: #C1CDC4;
+}
+.courses {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+.courses input[type="radio"] {
+    transform:scale(1.2);
+}
+.disciplines input[type="checkbox"] {
+    transform:scale(1.2);
+}
+.submit-reset {
+    margin-top: 20px;
+}
+.submit-reset input:first-child {
+    margin-right: 10px;
+}
+.submit-reset input {
+    padding: 5px 12px 5px 12px;
+    background-color: darkgrey;
+    border-radius: 5px;
+}
+.submit-reset input:hover {
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.8);
+    transition: .2s;
+}
+.print {
+    margin-top: 20px;
+}
+.print input {
+    padding: 5px 12px 5px 12px;
+    background-color: darkgrey;
+    border-radius: 5px;
+}
+.print input:hover {
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.8);
+    transition: .2s;
+}
+div > label:first-child {
+    font-weight: 600;
+}
+p::first-line {
+    padding-left: 50%;
+    text-decoration: underline;
+    font-weight: 600;
+}
+span {
+    text-decoration: underline;
+    font-weight: 600;
+}
+.second-container {
+    margin: 30px;
+}
+.second-container select {
+    overflow: auto;
+}
+.output-info {
+    width: 400px;
+    color: rgb(168, 165, 192);
+    backdrop-filter: blur(15px);
+    background-color: rgba(68, 89, 105, 0.8 );
+    opacity: background-color .3;
+    border-radius: 10px;
+    padding: 10px;
+}

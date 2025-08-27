@@ -1,0 +1,11 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> - пространство имен для xml schema
+
+
+<xs:element name="faculties" type="FacultiesType"/></> определяет элемент faculties с типом FacultiesType
+
+<xs:complexType name="FacultiesType"></> у элемента faculties комплексный типом
+
+<xs:sequence></> - последовательность элементов
+
+<xs:element name="faculty" type="xs:string"/> определяет элемент faculty со строковым типом данных
+

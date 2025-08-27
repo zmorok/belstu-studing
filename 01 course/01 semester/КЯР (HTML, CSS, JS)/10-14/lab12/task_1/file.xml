@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<faculties>
+  <head>
+    <faculty>фит</faculty>
+    <faculty>пим</faculty>
+    <faculty>хтит</faculty>
+    <faculty>иэф</faculty>
+  </head>
+  <specialities>
+    <speciality>1я специальность</speciality>
+    <speciality>2я специальность</speciality>
+    <speciality>3я специальность</speciality>
+    <speciality>4я специальность</speciality>
+  </specialities>
+  <informations>
+    <info>Текст о 1ой специальности</info>
+    <info>Текст о 2ой специальности</info>
+    <info>Текст о 3ей специальности</info>
+    <info>Текст о 4ой специальности</info>
+  </informations>
+</faculties>

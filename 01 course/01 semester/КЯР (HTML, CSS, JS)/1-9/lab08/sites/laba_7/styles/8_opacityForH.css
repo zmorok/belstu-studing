@@ -1,0 +1,15 @@
+@keyframes opacityForH {
+	0% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 1;
+	}
+}
+h1 {
+	text-align: center;
+	animation-name: opacityForH;
+	animation-duration: 0.8s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}

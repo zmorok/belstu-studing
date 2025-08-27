@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content>h1 {
+  text-align: center;
+}
+
+.times {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.time {
+  padding: 20px;
+  background-color: blueviolet;
+  border-radius: 20px;
+}
+
+span {
+  color: white;
+}

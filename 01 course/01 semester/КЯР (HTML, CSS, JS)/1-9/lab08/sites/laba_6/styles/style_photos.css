@@ -1,0 +1,34 @@
+.container-os-photos {
+    width: auto;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 30px/40px;
+    margin-top: 9vh;
+}
+img {
+    width: auto;
+    height: 100px;
+}
+.first-line, .second-line, .third-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first-line, .second-line {
+    border-bottom: 2px solid black;
+}
+.first-line .photo, .second-line .photo, .third-line .photo{
+    display: inline-block;
+    margin: 5px 100px 5px 0;;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+}
+figcaption {
+    text-align: center;
+}
+span {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.2em;
+}

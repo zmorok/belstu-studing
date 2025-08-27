@@ -1,0 +1,29 @@
+.comments-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.comment {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.comment-header {
+  margin-bottom: 5px;
+}
+
+.comment-buttons button {
+  margin-right: 5px;
+}
+
+.add-comment input,
+.add-comment textarea {
+  display: block;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.add-comment button {
+  margin-top: 10px;
+}

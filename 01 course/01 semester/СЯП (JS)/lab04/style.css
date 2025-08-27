@@ -1,0 +1,35 @@
+th~td:nth-child(1) {
+    color: blue;
+  }
+  body {
+    background-color: rgb(114, 16, 16);
+    color: #fff;
+  }
+  #div-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    padding: 5px 5px 5px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+  }
+  button {
+    display: inline;
+    margin-top: 5px;
+    width: 95%;
+    height: 40px;
+    text-align: justify;
+    color: aqua;
+    background-color: rgb(8, 71, 71);
+    box-shadow: 3px 3px 4px 4px black;
+  }
+  button:nth-child(1) {
+    margin-top: 0px;
+  }
+  p {
+    display: block;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: chartreuse;
+    margin-left: 50px;
+  }

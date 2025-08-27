@@ -1,0 +1,48 @@
+﻿<Window
+    x:Class="FreelanceApp.Authentication.LoginWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FreelanceApp.Authentication"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="{DynamicResource LoginWindow_Title}"
+    Icon="/Icons/User.ico"
+    Style="{DynamicResource LoginWindowStyle}"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+
+    <Grid>
+
+        <Border Style="{DynamicResource BorderMainStyle}">
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Style="{DynamicResource HeaderText}" Text="{DynamicResource LoginWindow_Header}" />
+
+                <TextBlock
+                    FontWeight="SemiBold"
+                    Foreground="{DynamicResource Fg_Brush}"
+                    Text="{DynamicResource LoginWindow_Login}" />
+                <TextBox Name="UsernameBox" Style="{DynamicResource RoundedTextBox}" />
+
+                <TextBlock
+                    FontWeight="SemiBold"
+                    Foreground="{DynamicResource Fg_Brush}"
+                    Text="{DynamicResource LoginWindow_Password}" />
+                <PasswordBox Name="PasswordBox" Style="{DynamicResource RoundedPasswordBox}" />
+
+                <StackPanel
+                    HorizontalAlignment="Center"
+                    Background="Transparent"
+                    Orientation="Horizontal">
+                    <Button
+                        Command="{Binding LoginCommand}"
+                        Content="{DynamicResource LoginWindow_Btn_Login}"
+                        Style="{DynamicResource PrimaryButton}" />
+                    <Button
+                        Command="{Binding GoBackCommand}"
+                        Content="{DynamicResource LoginWindow_Btn_Back}"
+                        Style="{DynamicResource SecondaryButton}" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

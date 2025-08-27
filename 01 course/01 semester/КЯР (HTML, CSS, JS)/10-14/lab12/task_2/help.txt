@@ -1,0 +1,7 @@
+!DOCTYPE определяет faculties как корневой элемент
+
+!ELEMENT faculties определяет, что корневой элемент содержит 3 тега (head, specialities, informations)
+
+!ELEMENT faculty определяет, что в теге faculty не будет других тегов, а только какая-то дата (#PCDATA)
+
+ENTITY для определения сущностей в DTD с целью их использования как в связанном с DTD XML-документе

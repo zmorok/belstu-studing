@@ -1,0 +1,10 @@
+void addClient();
+void displayClients();
+void displayClientAtIndex();
+void editClient();
+void deleteClient();
+void sortClients();
+void searchClientBySubstring();
+void searchByBinaryWithIndex();
+void writeClientsToFile();
+void readClientsFromFile();
