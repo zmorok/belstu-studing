@@ -1,0 +1,26 @@
+﻿  OS10_03.cpp
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(18,101): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(18,60): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(19,103): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(19,60): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(20,81): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(20,55): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(21,81): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(21,55): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(26,75): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(28,70): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(32,75): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(35,64): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(38,75): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(41,64): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(44,70): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(47,59): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(50,70): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(53,59): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(60,70): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(62,75): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(66,55): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(67,55): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(68,60): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab01\OS10_03\OS10_03.cpp(69,60): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  OS10_03.vcxproj -> D:\Programming\SP\lab01\x64\Debug\OS10_03.exe

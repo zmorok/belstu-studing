@@ -1,0 +1,10 @@
+OCR.ExtractTextWithOCR.ExtractTextFromFileWithWindowsOcr ImageFile: $'''C:\\Users\\zmorok\\Desktop\\рпр7\\photo.jpg''' WindowsOcrLanguage: OCR.WindowsOcrLanguage.English ImageWidthMultiplier: 1 ImageHeightMultiplier: 1 OcrText=> OcrText
+Text.SplitText.Split Text: OcrText StandardDelimiter: Text.StandardDelimiter.NewLine DelimiterTimes: 1 Result=> TextList
+Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: $'''C:\\Users\\zmorok\\Desktop\\рпр7\\photo.xlsx''' Visible: True ReadOnly: False UseMachineLocale: False Instance=> ExcelInstance
+SET i TO 0
+LOOP FOREACH CurrentItem IN TextList
+    SET NewVar TO TextList[i]
+    Variables.IncreaseVariable Value: i IncrementValue: 1
+    Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: NewVar Column: 1 Row: 1
+END
+Excel.CloseExcel.CloseAndSave Instance: ExcelInstance

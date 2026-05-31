@@ -1,0 +1,177 @@
+﻿@using ASPA008_1.Models
+@model NewHumanFormModel
+
+@inject ASPA008_1.Helpers.CountryCodes Countries
+@{
+    var sl = new SelectList(Countries, "code", "countryLabel", Model.Nationality);
+
+    string imgSrc = (Model.Mode == FormMode.Create && !Model.Confirm)
+        ? $"api/Celebrities/photo/brilliant.jpg"
+        : $"{Model.PhotosRequestPath}/{Model.TempFileName}";
+}
+
+<form asp-action="NewHumanForm"
+      asp-controller="Celebrities"
+      method="post"
+      enctype="multipart/form-data">
+
+    @* Служебные поля *@
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="Mode" />
+    <input type="hidden" name="tempfilename" value="@Model.TempFileName" />
+
+    <div class="row mb-3">
+        <div class="celebrity-box">
+            <img src="@imgSrc" style="max-width:120px; border:2px solid #c59d67;" />
+        </div>
+        <div class="celebrity-box">
+            @* Режим DELETE *@
+            @if (Model.Mode == FormMode.Delete)
+            {
+                <input name="fullname"
+                       value="@Model.FullName"
+                       readonly
+                       class="form-control mb-2" />
+
+                <input name="nationality"
+                       value="@Model.Nationality"
+                       readonly
+                       class="form-control mb-2" />
+
+                <div class="d-flex">
+                    <button name="press"
+                            value="Confirm"
+                            type="submit"
+                            class="btn btn-danger me-2">
+                        Delete
+                    </button>
+                    <button name="press"
+                            value="Cancel"
+                            type="submit"
+                            class="btn btn-link">
+                        Back
+                    </button>
+                </div>
+            }
+            @* Режим EDIT: сразу редактируем и сразу Save *@
+            else if (Model.Mode == FormMode.Edit)
+            {
+                <input name="fullname"
+                       value="@Model.FullName"
+                       placeholder="Celebrity Name"
+                       required
+                       class="form-control mb-2" />
+
+                @Html.DropDownList("Nationality", sl, new { @class = "form-select mb-2" })
+
+                @* По желанию дать сменить фото *@
+                <input id="upload"
+                       name="upload"
+                       type="file"
+                       accept="image/jpeg"
+                       style="display:none"
+                       onchange="onChange(this)" />
+
+                <button type="button"
+                        class="btn btn-outline-primary mb-2"
+                        onclick="document.getElementById('upload').click()">
+                    Change Photo
+                </button>
+
+                <div class="d-flex">
+                    <button name="press"
+                            value="Confirm"
+                            type="submit"
+                            class="btn btn-primary me-2">
+                        Save
+                    </button>
+                    <button name="press"
+                            value="Cancel"
+                            type="submit"
+                            class="btn btn-link">
+                        Cancel
+                    </button>
+                </div>
+            }
+            @* Режим CREATE (с предпросмотром) *@
+            else
+            {
+                @if (!Model.Confirm)
+                {
+                    <input name="fullname"
+                           value="@Model.FullName"
+                           placeholder="Celebrity Name"
+                           required
+                           class="form-control mb-2" />
+
+                    @Html.DropDownList("Nationality", sl, new { @class = "form-select mb-2" })
+
+                    <input id="upload"
+                           name="upload"
+                           type="file"
+                           accept="image/jpeg"
+                           style="display:none"
+                           onchange="onChange(this)"
+                           required />
+
+                    <button type="button"
+                            class="btn btn-outline-primary mb-2"
+                            onclick="document.getElementById('upload').click()">
+                        Upload Photo
+                    </button>
+
+                    <div class="d-flex">
+                        <button type="submit"
+                                class="btn btn-success me-2">
+                            Preview
+                        </button>
+                        <button type="reset"
+                                class="btn btn-secondary">
+                            Cancel
+                        </button>
+                    </div>
+                }
+                else
+                {
+                    <input name="fullname"
+                           value="@Model.FullName"
+                           readonly
+                           class="form-control mb-2" />
+
+                    <input name="nationality"
+                           value="@Model.Nationality"
+                           readonly
+                           class="form-control mb-2" />
+
+                    <div class="d-flex">
+                        <button name="press"
+                                value="Confirm"
+                                type="submit"
+                                class="btn btn-primary me-2">
+                            Confirm
+                        </button>
+                        <button name="press"
+                                value="Cancel"
+                                type="submit"
+                                class="btn btn-link">
+                            Edit
+                        </button>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</form>
+
+<script>
+    function onChange(input) {
+        const btn = document.querySelector("button.btn-outline-primary");
+        const file = input.files[0];
+        let name = file ? file.name : "Upload Photo";
+        if (name.length > 20) {
+            const ext = name.split('.').pop();
+            name = name.slice(0, 15) + '...' + ext;
+        }
+        btn.textContent = name;
+    }
+</script>

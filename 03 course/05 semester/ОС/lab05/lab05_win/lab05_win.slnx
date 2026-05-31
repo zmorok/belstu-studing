@@ -1,0 +1,13 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Lab_05a/Lab_05a.vcxproj" Id="67c8ee5f-3c61-45a9-b9e8-cbaef7f68eb4" />
+  <Project Path="Lab_05b/Lab_05b.vcxproj" Id="7cb74d65-8bc6-4a6f-8550-43c7e9a07692" />
+  <Project Path="Lab_05c/Lab_05c.vcxproj" Id="8f055a44-ec27-43e4-9d51-fd7161f824a9" />
+  <Project Path="Lab_05CP/Lab_05CP.vcxproj" Id="51676922-1f3e-45e5-93d8-04f416e99315" />
+  <Project Path="Lab_05RR/Lab_05RR.vcxproj" Id="36df7d3f-49f3-4114-8ee1-abafc7b75600" />
+  <Project Path="Lab_05SJF/Lab_05SJF.vcxproj" Id="1f3e9b0d-1958-4317-bdb1-8942c4eb9abd" />
+  <Project Path="Lab_05x/Lab_05x.vcxproj" Id="daada23d-6344-4937-b0eb-676100f92e1c" />
+</Solution>

@@ -1,0 +1,12 @@
+Display.InputDialog Title: $'''Введите четырёхзначное число''' InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> UserInput ButtonPressed=> ButtonPressed
+LOOP LoopIndex FROM 0 TO 3 STEP 1
+    Text.GetSubtext.GetSubtext Text: UserInput CharacterPosition: LoopIndex NumberOfChars: 1 Subtext=> Subtext
+    Text.ToNumber Text: Subtext Number=> TextAsNumber
+    SET NewVar TO TextAsNumber mod 2
+    SWITCH NewVar
+        CASE = 0
+            Display.ShowMessageDialog.ShowMessage Message: $'''%Subtext% является четным числом''' Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed2
+        DEFAULT
+            Display.ShowMessageDialog.ShowMessage Message: $'''%Subtext% является нечетным числом''' Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed3
+    END
+END

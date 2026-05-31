@@ -1,0 +1,10 @@
+﻿  pch.cpp
+  OS13_HTCOM.cpp
+  Registry.cpp
+  Создание кода...
+D:\Programming\SP\lab04\OS13_HTCOM\Registry.cpp(139,6): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+  (compiling source file '/Registry.cpp')
+  
+OS13_HTCOM.def(2): warning LNK4017: оператор DESCRIPTION не поддерживается на конечной платформе; пропущен
+     Создается библиотека D:\Programming\SP\lab04\x64\Debug\OS13_HTCOM.lib и объект D:\Programming\SP\lab04\x64\Debug\OS13_HTCOM.exp
+  OS13_HTCOM.vcxproj -> D:\Programming\SP\lab04\x64\Debug\OS13_HTCOM.dll

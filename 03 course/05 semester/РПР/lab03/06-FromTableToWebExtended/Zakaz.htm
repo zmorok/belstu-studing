@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <title>Заказ товаров</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <form name="f1">
+    <h1 align="left"> Заказ товаров </h1>
+    Компания <input type="text" name="firma" size=10>
+    заказала <input type="text" name="tovar" size=10>
+    суммой <input type="text" id="summa" name="summa" size="10">
+    рублей.
+    <br><br>
+    <input type="button" name="b1" size=30 value="Click">
+    <p>Итоговая сумма: <span id="summa_ext"></span></p>
+  </form>
+</body>
+
+<script>
+  const summaInput = document.getElementById('summa');
+  const out = document.getElementById('summa_ext');
+
+  summaInput.addEventListener('input', () => {
+    const s = parseFloat(summaInput.value.replace(',', '.'));
+    out.textContent = isNaN(s) ? '' : s;
+  });
+
+  document.f1.b1.onclick = function () {
+    document.f1.firma.value = null;
+    document.f1.tovar.value = null;
+    document.f1.summa.value = null;
+    document.getElementById('summa_ext').textContent = null;
+  };
+</script>
+
+</html>

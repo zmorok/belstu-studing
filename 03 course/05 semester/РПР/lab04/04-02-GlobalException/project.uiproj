@@ -1,0 +1,6 @@
+{
+  "Name": "04-02-GlobalException",
+  "ProjectType": "Process",
+  "Description": "Пустой процесс",
+  "MainFile": "Main.xaml"
+}

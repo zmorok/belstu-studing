@@ -1,0 +1,11 @@
+﻿  ClientT.cpp
+D:\Programming\PSP\lab02\ClientT\ClientT.cpp(68,49): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\PSP\lab02\ClientT\ClientT.cpp(85,10): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  SetErrorMsgText.cpp
+  SetupConsole.cpp
+  Создание кода
+  161 of 166 functions (97.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  ClientT.vcxproj -> D:\Programming\PSP\lab02\x64\Release\ClientT.exe

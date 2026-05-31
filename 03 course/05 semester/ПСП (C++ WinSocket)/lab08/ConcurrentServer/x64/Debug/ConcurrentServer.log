@@ -1,0 +1,8 @@
+﻿  ConcurrentServer.cpp
+D:\Programming\PSP\lab08\ConcurrentServer\ConcurrentServer.cpp(234,92): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\PSP\lab08\ConcurrentServer\ConcurrentServer.cpp(257,80): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\PSP\lab08\ConcurrentServer\ConcurrentServer.cpp(422,53): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+D:\Programming\PSP\lab08\ConcurrentServer\ConcurrentServer.cpp(619,51): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\PSP\lab08\ConcurrentServer\ConcurrentServer.cpp(660,17): warning C4244: инициализация: преобразование "ULONGLONG" в "DWORD", возможна потеря данных
+D:\Programming\PSP\lab08\ConcurrentServer\ConcurrentServer.cpp(707,17): warning C4244: инициализация: преобразование "ULONGLONG" в "DWORD", возможна потеря данных
+  ConcurrentServer.vcxproj -> D:\Programming\PSP\lab08\x64\Debug\ConcurrentServer.exe

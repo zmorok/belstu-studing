@@ -1,0 +1,8 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (Win32Project1.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  CPyramid.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+C:\Users\zmorok\Desktop\7 — копия\Lab04\Win32Project1\CPyramid.cpp(97,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\zmorok\Desktop\7 — копия\Lab04\Win32Project1\CPyramid.cpp(99,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\zmorok\Desktop\7 — копия\Lab04\Win32Project1\CPyramid.cpp(216,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\zmorok\Desktop\7 — копия\Lab04\Win32Project1\CPyramid.cpp(218,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Win32Project1.vcxproj -> C:\Users\zmorok\Desktop\7 — копия\Lab04\x64\Debug\lab7.exe

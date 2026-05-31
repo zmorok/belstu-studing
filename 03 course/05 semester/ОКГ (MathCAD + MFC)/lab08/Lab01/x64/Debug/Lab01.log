@@ -1,0 +1,16 @@
+﻿  stdafx.cpp
+  ChildView.cpp
+  CMatrix.cpp
+  Lab06.cpp
+  LibGraph.cpp
+  LibSurface.cpp
+D:\Studying\3 курс\выполненные\ОКГ\lab08\Lab01\LibSurface.cpp(267,12): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (compiling source file '/LibSurface.cpp')
+  
+D:\Studying\3 курс\выполненные\ОКГ\lab08\Lab01\LibSurface.cpp(268,12): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (compiling source file '/LibSurface.cpp')
+  
+  MainFrm.cpp
+  Создание кода...
+D:\Studying\3 курс\выполненные\ОКГ\lab08\Lab01\LibSurface.cpp(185,1): warning C4715: CPlot3D::GetNumberRegion: значение возвращается не при всех путях выполнения
+  Lab01.vcxproj -> D:\Studying\3 курс\выполненные\ОКГ\lab08\x64\Debug\Lab06.exe

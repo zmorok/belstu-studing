@@ -1,0 +1,6 @@
+{
+  "Name": "03-ResultsExamenExcel",
+  "ProjectType": "Process",
+  "Description": "Пустой процесс",
+  "MainFile": "Main.xaml"
+}

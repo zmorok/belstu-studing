@@ -1,0 +1,7 @@
+{
+  "Celebrities": {
+    "PhotosRequestPath": "/Photos",
+    "PhotosFolder": "D:\\Programming\\ASP\\ASPA\\ASPA007_1\\Photos",
+    "ConnectionString": "Server=localhost;Database=CelebrityDB_STSR_07;User Id=zmorok_pwd;Password=qwerty1234$;TrustServerCertificate=True;"
+  }
+}

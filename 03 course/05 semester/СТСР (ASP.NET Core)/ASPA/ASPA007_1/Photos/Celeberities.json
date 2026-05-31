@@ -1,0 +1,9 @@
+[
+  {"Id":1,  "Firstname":"Noam",   "Surname": "Chomsky",     "PhotoPath": "/Photo/Chomsky.jpg"},
+  {"Id":2,  "Firstname":"Tim",    "Surname": "Berners-Lee", "PhotoPath": "/Photo/Berners-Lee.jpg"},
+  {"Id":3,  "Firstname":"Edgar",  "Surname": "Codd",        "PhotoPath": "/Photo/Codd.jpg"}, 
+  {"Id":4,  "Firstname":"Donald", "Surname": "Knuth",       "PhotoPath": "/Photo/Knuth.jpg"},
+  {"Id":5,  "Firstname":"Linus",  "Surname": "Torvalds",    "PhotoPath": "/Photo/Torvalds.jpg"},
+  {"Id":6,  "Firstname":"John",   "Surname": "Neumann",     "PhotoPath": "/Photo/Neumann.jpg"},
+  {"Id":7,  "Firstname":"Edsger", "Surname": "Dijkstra",    "PhotoPath": "/Photo/Dijkstra.jpg"}
+]     

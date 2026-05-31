@@ -1,0 +1,9 @@
+LIBRARY "OS13_HTCOM"
+DESCRIPTION "OS13 HT COM Component DLL"
+
+EXPORTS
+	DllGetClassObject	PRIVATE
+	DllCanUnloadNow		PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+

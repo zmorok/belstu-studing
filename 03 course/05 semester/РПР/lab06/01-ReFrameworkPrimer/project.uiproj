@@ -1,0 +1,6 @@
+{
+  "Name": "01-ReFrameworkPrimer",
+  "ProjectType": "Process",
+  "Description": "Роботизированная инфраструктура предприятия",
+  "MainFile": "Main.xaml"
+}

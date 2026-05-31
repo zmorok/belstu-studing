@@ -1,0 +1,17 @@
+﻿  stdafx.cpp
+  ChildView.cpp
+  CMatrix.cpp
+D:\Studying\3 курс\выполненные\ОКГ\lab11\lab11\Lab08\ChildView.cpp(79,8): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  (compiling source file '/ChildView.cpp')
+  
+  Lab08.cpp
+  LibGraph.cpp
+D:\Studying\3 курс\выполненные\ОКГ\lab11\lab11\Lab08\LibGraph.cpp(87,8): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  (compiling source file '/LibGraph.cpp')
+  
+D:\Studying\3 курс\выполненные\ОКГ\lab11\lab11\Lab08\LibGraph.cpp(89,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  (compiling source file '/LibGraph.cpp')
+  
+  MainFrm.cpp
+  Создание кода...
+  Lab08.vcxproj -> D:\Studying\3 курс\выполненные\ОКГ\lab11\lab11\x64\Debug\Lab08.exe

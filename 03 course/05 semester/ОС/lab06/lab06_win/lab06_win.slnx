@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="D:/Studying/3 курс/выполненные/ОС/lab06/lab06_win/Lab_06a/Lab_06a.vcxproj" Id="0600e00c-a67f-4272-ba72-0857ffa42346" />
+  <Project Path="D:/Studying/3 курс/выполненные/ОС/lab06/lab06_win/Lab_06b/Lab_06b.vcxproj" Id="8d16eabb-0d51-470e-9e73-692ef24c3773" />
+  <Project Path="D:/Studying/3 курс/выполненные/ОС/lab06/lab06_win/Lab_06c/Lab_06c.vcxproj" Id="e50643b7-cba5-426f-83dd-819cd1a99362" />
+  <Project Path="D:/Studying/3 курс/выполненные/ОС/lab06/lab06_win/Lab_06d/Lab_06d.vcxproj" Id="327353a6-ec7b-4381-b017-ef0216283f22" />
+  <Project Path="D:/Studying/3 курс/выполненные/ОС/lab06/lab06_win/Lab_06_bar/Lab_06_bar.vcxproj" Id="ddbc7ad3-564d-46b8-b7d9-ca6f09d87c1d" />
+  <Project Path="D:/Studying/3 курс/выполненные/ОС/lab06/lab06_win/Lab_06_conds/Lab_06_conds.vcxproj" Id="c9f4e61e-9ba3-4174-a40e-fd803ef283dd" />
+</Solution>

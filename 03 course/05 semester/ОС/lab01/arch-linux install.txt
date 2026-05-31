@@ -1,0 +1,105 @@
+PARTITIONS
+
+make them:
+	cfdisk
+
+home:	mkfs.ext4 /dev/sda3
+boot:	mkfs.fat -F 32 /dev/sda1
+swap:	mkswap /dev/sda2
+
+mount:	mount /dev/sda3 /mnt
+mboot:	mkdir -p /mnt/boot/efi
+	mount /dev/sda1 /mnt/boot/efi
+mswap:	swapon /dev/sda2
+
+
+installation:
+
+	pacstrap /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr nano os-prober networkmanager
+
+
+FSTAB:
+	genfstab /mnt > /mnt/etc/fstab
+
+
+CHANGEROOT
+	arch-chroot /mnt
+
+
+TIMEZONE
+	ln -sf /usr/share/zoneinfo/Europe/Minsk /etc/localtime
+	hwclock --systohc
+	date
+
+LOCALIZATION
+	nano /etc/locale.gen
+	выбираем нужные локали
+	сохраняем через Ctrl+O Enter Ctrl+X
+	locale-gen
+
+HOSTNAME
+	nano /etc/hostname
+	zmorok
+	сохраняем через Ctrl+O Enter Ctrl+X
+
+PASSWORD
+	passwd (root for root)
+
+OWN USER
+	useradd -m -G wheel -s /bin/bash User-35315bc6
+	passwd zmorok (root)
+
+SUDO
+	EDITOR=nano visudo
+	ищем строчку с %wheel 
+	
+	su zmorok
+
+SERVICES
+	systemctl enable NetworkManager
+
+BOOT MANAGER
+		grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+	grub-install /dev/sda
+	grub-mkconfig -o /boot/grub/grub.cfg
+
+	exit
+	umount -a
+	reboot
+
+ТУТ ЕСЛИ ВСЁ ПОЛУЧИЛОСЬ, ТО КРУТО
+
+	графика
+	sudo pacman -S plasma sddm
+	
+	sudo pacman -S konsole kate firefox
+	sudo systemctl enable sddm
+	sudo systemctl enable --now sddm
+
+-------------------------------
+
+
+Commands used in this tutorial:
+
+To find BIOS boot partition: sudo fdisk -l
+
+To get UUID of BIOS boot partition: sudo blkid /dev/sda1
+
+Edit GRUB file: sudo nano /etc/grub.d/40_custom
+
+Windows menu entry code: 
+
+menuentry "Windows" --class windows --class os {
+    search --fs-uuid --no-floppy --set=root UUID_Here
+  chainloader (${root})/EFI/Microsoft/Boot/bootmgfw.efi
+}
+
+Update GRUB: sudo update-grub
+
+-------------------------------
+
+
+sudo pacman -S ntfs-3g os-prober
+mount /dev/sda1 /mnt
+os-prober
+grub-mkconfig -o /boot/grub/grub.cfg

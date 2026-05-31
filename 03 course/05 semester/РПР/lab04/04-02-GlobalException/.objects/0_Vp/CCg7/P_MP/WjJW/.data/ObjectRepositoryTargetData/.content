@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DvLEp6wBQ0S3A78YKn3ubA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="152, 41, 505, 34" ElementType="Toolbar" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd aaname='Загрузка' cls='msctls_progress32' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;wnd ctrlid='1001' title='Адрес: D:\Programming\RPR\lab04\04-02-GlobalException' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' matching:title='fuzzy' fuzzylevel:title='0.0' check:text='D:\Programming\RPR\lab04\04-02-GlobalException' /&gt;" Guid="f33096d8-38c8-4166-bffd-b2c768466af2" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32770' title='Открытие' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c7fd781e09b5b97b3cdf0d95204c9fd9.png" xmlns="">0YQQtIcf3o0Cp1bK9AioxKA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

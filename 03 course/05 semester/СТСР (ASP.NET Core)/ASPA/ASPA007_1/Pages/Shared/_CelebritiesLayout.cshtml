@@ -1,0 +1,27 @@
+﻿@using static CelebrityAPI;
+@{
+    var titles = Titles;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>@titles.Title</title>
+    </head>
+    <body>
+        <h1>@titles.Head</h1>
+        <hr />
+
+        @RenderSection("subhead", false)
+
+        <div>
+            @RenderBody()
+        </div>
+
+        @RenderSection("foot",false)
+        <hr />
+
+        @titles.Copyright
+    </body>
+</html>

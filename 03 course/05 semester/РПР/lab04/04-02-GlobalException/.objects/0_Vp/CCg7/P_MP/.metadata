@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Открытие",
+  "Type": "Screen",
+  "Id": "P_MPkrC_7Umf881ukkBrNg",
+  "Reference": "6uDfDS-6eUW_nRjm-yxJYA/P_MPkrC_7Umf881ukkBrNg",
+  "ParentRef": "6uDfDS-6eUW_nRjm-yxJYA/CCg7CBX5v0uEUZaeUDEcKw",
+  "Created": "2025-10-15T16:00:20.9597393Z",
+  "Updated": "2025-10-15T16:00:20.9597393Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

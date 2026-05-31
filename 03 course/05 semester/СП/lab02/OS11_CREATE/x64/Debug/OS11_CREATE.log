@@ -1,0 +1,8 @@
+﻿  OS11_CREATE.cpp
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(34,35): warning C4091: __declspec(dllimport): пропускается слева от "HT::HTHANDLE", когда ни одна переменная не объявлена
+  (компиляция исходного файла "OS11_CREATE.cpp")
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(55,35): warning C4091: __declspec(dllimport): пропускается слева от "HT::Element", когда ни одна переменная не объявлена
+  (компиляция исходного файла "OS11_CREATE.cpp")
+  
+  OS11_CREATE.vcxproj -> D:\Programming\SP\lab02\x64\Debug\OS11_CREATE.exe

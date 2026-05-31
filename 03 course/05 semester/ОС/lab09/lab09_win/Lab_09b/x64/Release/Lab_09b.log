@@ -1,0 +1,14 @@
+﻿  Lab_09b.c
+D:\Studying\3 курс\выполненные\ОС\lab09\lab09_win\Lab_09b\Lab_09b.c(102,21): warning C4028: формальный параметр 1 отличается от объявления
+D:\Studying\3 курс\выполненные\ОС\lab09\lab09_win\Lab_09b\Lab_09b.c(102,6): warning C4029: объявленный список формальных параметров отличается от объявления
+D:\Studying\3 курс\выполненные\ОС\lab09\lab09_win\Lab_09b\Lab_09b.c(102,6): warning C4273: OpenFile: несовместимое связывание dll
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winbase.h(2936,1):
+      см. предыдущее определение "OpenFile"
+  
+     Создается библиотека D:\Studying\3 курс\выполненные\ОС\lab09\lab09_win\x64\Release\Lab_09b.lib и объект D:\Studying\3 курс\выполненные\ОС\lab09\lab09_win\x64\Release\Lab_09b.exp
+  Создание кода
+  1 of 14 functions ( 7.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  Lab_09b.vcxproj -> D:\Studying\3 курс\выполненные\ОС\lab09\lab09_win\x64\Release\Lab_09b.exe

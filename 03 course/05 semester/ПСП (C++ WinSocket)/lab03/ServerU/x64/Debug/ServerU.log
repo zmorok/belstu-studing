@@ -1,0 +1,6 @@
+﻿  ServerU.cpp
+D:\Programming\PSP\lab03\ServerU\ServerU.cpp(69,46): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  SetErrorMsgText.cpp
+  SetupConsole.cpp
+  Создание кода...
+  ServerU.vcxproj -> D:\Programming\PSP\lab03\x64\Debug\ServerU.exe

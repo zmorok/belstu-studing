@@ -1,0 +1,6 @@
+{
+  "Name": "04-01-SimpleTryCatch",
+  "ProjectType": "Process",
+  "Description": "Пустой процесс",
+  "MainFile": "Main.xaml"
+}

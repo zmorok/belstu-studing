@@ -1,0 +1,8 @@
+﻿  Lab_04x.cpp
+D:\Studying\3 курс\выполненные\ОС\lab04\lab04_win\Lab_04x\Lab_04x.cpp(8,22): warning C4311: приведение типов: усечение указателя из "LPVOID" в "int"
+D:\Studying\3 курс\выполненные\ОС\lab04\lab04_win\Lab_04x\Lab_04x.cpp(8,22): warning C4302: приведение типов: усечение из "LPVOID" к "int"
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 6 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  Lab_04x.vcxproj -> D:\Studying\3 курс\выполненные\ОС\lab04\lab04_win\x64\Release\Lab_04x.exe

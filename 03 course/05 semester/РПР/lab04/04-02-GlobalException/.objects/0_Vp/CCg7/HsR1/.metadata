@@ -1,0 +1,13 @@
+﻿{
+  "Name": "text.txt – Блокнот",
+  "Type": "Screen",
+  "Id": "HsR1DDgAhEakJEvp6ud8cA",
+  "Reference": "6uDfDS-6eUW_nRjm-yxJYA/HsR1DDgAhEakJEvp6ud8cA",
+  "ParentRef": "6uDfDS-6eUW_nRjm-yxJYA/CCg7CBX5v0uEUZaeUDEcKw",
+  "Created": "2025-10-15T16:01:58.7055435Z",
+  "Updated": "2025-10-15T16:01:58.7055435Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

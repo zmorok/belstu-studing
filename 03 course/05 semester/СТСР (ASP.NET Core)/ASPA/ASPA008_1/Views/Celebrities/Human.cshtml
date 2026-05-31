@@ -1,0 +1,45 @@
+﻿@using DAL_Celebrity_MSSQL;
+@using System.Globalization;
+@using ASPA008_1.Helpers;
+@model ASPA008_1.Controllers.CelebritiesController.HumanModel;
+
+@{
+    Layout = "_CelebritiesLayout";
+    var celebrity = Model.celebrity;
+    var references = Model.references ?? new Dictionary<string, string>();
+}
+
+<div style="display:flex; gap:20px; background:#c59d67; padding:20px; align-items:flex-start;">
+
+    <!-- LEFT: PHOTO -->
+    <div class="celebrity-box">
+        @Html.CelebrityPhoto(celebrity.Id, celebrity.FullName, $"api/Celebrities/photo/{celebrity.ReqPhotoPath}")
+    </div>
+
+    <!-- MIDDLE: TEXT -->
+    <div class="celebrity-box" style="flex:1;">
+        <h2>@celebrity.FullName</h2>
+
+        @foreach (var live in Model.lifeevents)
+        {
+            <p>@live.Date.ToString() – @live.Description</p>
+        }
+
+        <div style="margin-top:10px;">
+            @foreach (var info in references)
+            {
+                <a id="@info.Key" href="@info.Value" target="_blank" hidden>@info.Key</a>
+                <button onclick="document.getElementById('@info.Key').click();" class="btn btn-sm btn-info">
+                    @info.Key
+                </button>
+            }
+        </div>
+    </div>
+
+    <!-- RIGHT: BUTTONS -->
+    <div style="display:flex; flex-direction:column; gap:10px;">
+        <a asp-action="Edit" asp-route-id="@celebrity.Id" class="btn btn-warning">Edit</a>
+        <a asp-action="Delete" asp-route-id="@celebrity.Id" class="btn btn-danger">Delete</a>
+    </div>
+
+</div>

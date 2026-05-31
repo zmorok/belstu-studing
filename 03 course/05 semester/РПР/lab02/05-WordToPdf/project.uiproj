@@ -1,0 +1,6 @@
+{
+  "Name": "05-WordToPdf",
+  "ProjectType": "Process",
+  "Description": "Пустой процесс",
+  "MainFile": "Main.xaml"
+}

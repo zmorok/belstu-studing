@@ -1,0 +1,6 @@
+{
+  "Name": "06-FromTableToWebExtended",
+  "ProjectType": "Process",
+  "Description": "Пустой процесс",
+  "MainFile": "Main.xaml"
+}

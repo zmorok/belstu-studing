@@ -1,0 +1,12 @@
+Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: $'''C:\\Users\\zmorok\\Desktop\\рпр7\\Examen..xlsx''' Visible: True ReadOnly: False UseMachineLocale: False Instance=> ExcelInstance
+Excel.ReadFromExcel.ReadCells Instance: ExcelInstance StartColumn: 2 StartRow: 2 EndColumn: 2 EndRow: 7 GetCellContentsMode: Excel.GetCellContentsMode.TypedValues FirstLineIsHeader: False RangeValue=> ExcelData
+Display.InputDialog Title: $'''Введите фамилию''' InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> UserInput ButtonPressed=> ButtonPressed
+SET NewVar TO 2
+LOOP FOREACH CurrentItem IN ExcelData
+    IF CurrentItem = UserInput THEN
+        Excel.ReadFromExcel.ReadCells Instance: ExcelInstance StartColumn: 2 StartRow: NewVar EndColumn: 3 EndRow: NewVar GetCellContentsMode: Excel.GetCellContentsMode.TypedValues FirstLineIsHeader: False RangeValue=> ExcelData2
+    END
+    Variables.IncreaseVariable Value: NewVar IncrementValue: 1
+END
+Display.ShowMessageDialog.ShowMessage Title: $'''Значение ExcelData2''' Message: ExcelData2 Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed2
+Excel.CloseExcel.Close Instance: ExcelInstance

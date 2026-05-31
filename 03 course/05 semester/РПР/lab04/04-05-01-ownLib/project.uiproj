@@ -1,0 +1,6 @@
+{
+  "Name": "04-05-01-ownLib",
+  "ProjectType": "Library",
+  "Description": "Пустая библиотека",
+  "MainFile": "NewActivity.xaml"
+}

@@ -1,0 +1,54 @@
+﻿@page
+@using DAL_Celebrity_MSSQL;
+@model ASPA007_1.Pages.NewCelebrityModel
+@{
+    // Layout = "_CelebritiesLayout";
+    int h = 200, w = 350;
+    bool Confirm = (bool)(ViewData["Confirm"] ?? false);
+    Celebrity celebrity = Model.Celebrity ?? new Celebrity();
+}
+@* @section subhead { <h2>New Celebrity</h2>} *@
+
+<div style="display:flex">
+
+    @if (!Confirm) @*OnPost*@
+    {
+        <img id="0" style="border: solid 2px #c59d67; max-width: 200px;"
+             title="New Celebrity"
+             src="@Model.PhotosRequestPath/brilliant.jpg"
+             onload="onPhotoLoad(this, eh, 0)" />
+        <div style="height:@h px; width:@w px; background-color: #c59d67; border:solid 2px #c59d67; align-content: center;">
+            <form method="post" enctype="multipart/form-data">
+                <input id="fullname" name="fullname" type="text" placeholder="Celebrities Name" style="align-content:center; width: 97%" required />
+                <input id="nationality" name="nationality" type="text" placeholder="Nationality"
+                       minlength="2" maxlength="2" style="width: 20%;" required />
+                <input id="upload" name="upload" type="file" style="display:none;" accept="image/jpeg" onchange="onChange(this)" required />
+                <button id="butupload" type="button" style="width: 77%" onclick="document.getElementById('upload').click()">Upload Photo </button>
+                <button type="submit" style="width: 49%"> OK</button>
+                <button name="press" type="submit" value="Cancel" style="width: 49%">CANCEL</button>
+            </form>
+        </div>
+    }
+    else @*OnGetConfirm*@
+    {
+        <img id="6" style="border:solid 2px #c59d67;  max-width: 200px;"
+             title="New Celebrity"
+             src="@Model.PhotosRequestPath/@celebrity.ReqPhotoPath"
+             onload="onPhotoLoad(this, @h, 0)" />
+        <div style="height:@h px; width:@w px; background-color: #c59d67; border: solid 2px #c59d67; align-content:center;">
+            <form method="post">
+                <input name="fullname" type="text" value="@celebrity.FullName " style="align-content:center; width: 97%" readonly />
+                <input name="nationality" type="text" value="@celebrity.Nationality" minlength="2" maxlength="2" style="width: 20%;" readonly />
+                <input name="filename" type="hidden" readonly value="@celebrity.ReqPhotoPath" />
+                <button name="press" type="submit" value="Confirm" style="width:100%">CONFIRMATION</button>
+                <button name="press" type="submit" value="Cancel" style="width:100%">CANCEL</button>
+            </form>
+        </div>
+    }
+
+    @if (ViewData["ValidMessage"] != null)
+    {
+        
+    } 
+
+</div>

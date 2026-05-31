@@ -1,0 +1,8 @@
+﻿  Lab_09c.c
+D:\Studying\3 курс\выполненные\ОС\lab09\lab09_win\Lab_09c\Lab_09c.c(153,12): warning C4008: wmain: пропуск атрибута "static"
+  Создание кода
+  1 of 6 functions (16.7%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  Lab_09c.vcxproj -> D:\Studying\3 курс\выполненные\ОС\lab09\lab09_win\x64\Release\Lab_09c.exe

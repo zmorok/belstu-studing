@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="D:/Studying/3 курс/выполненные/ОС/lab09/lab09_win/Lab_09a/Lab_09a.vcxproj" Id="3d854433-6594-47c1-b532-af481b5f96e3" />
+  <Project Path="Lab_09b/Lab_09b.vcxproj" Id="14aafca4-fffc-454a-b2b5-54000182a6fd" />
+  <Project Path="Lab_09c/Lab_09c.vcxproj" Id="b89b3c50-f3a8-42ef-8b92-9c067534d725" />
+  <Project Path="Lab_09_async/Lab_09_async.vcxproj" Id="2f775467-e050-40d5-bec8-80a47af083ee" />
+</Solution>

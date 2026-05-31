@@ -1,0 +1,12 @@
+﻿C:\Program Files\Microsoft Visual Studio\2026\Professional\MSBuild\Microsoft\VC\v180\Microsoft.CppBuild.targets(548,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (OS11_04.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  OS11_05.cpp
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(34,35): warning C4091: __declspec(dllimport): пропускается слева от "HT::HTHANDLE", когда ни одна переменная не объявлена
+  (компиляция исходного файла "OS11_05.cpp")
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(55,35): warning C4091: __declspec(dllimport): пропускается слева от "HT::Element", когда ни одна переменная не объявлена
+  (компиляция исходного файла "OS11_05.cpp")
+  
+D:\Programming\SP\lab02\OS11_05\OS11_05.cpp(84,65): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab02\OS11_05\OS11_05.cpp(106,92): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\SP\lab02\OS11_05\OS11_05.cpp(106,53): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  OS11_05.vcxproj -> D:\Programming\SP\lab02\x64\Debug\OS11_05.exe

@@ -1,0 +1,9 @@
+﻿  OS11_02.cpp
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(34,35): warning C4091: __declspec(dllimport): пропускается слева от "HT::HTHANDLE", когда ни одна переменная не объявлена
+  (компиляция исходного файла "OS11_02.cpp")
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(55,35): warning C4091: __declspec(dllimport): пропускается слева от "HT::Element", когда ни одна переменная не объявлена
+  (компиляция исходного файла "OS11_02.cpp")
+  
+D:\Programming\SP\lab02\OS11_02\OS11_02.cpp(93,65): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  OS11_02.vcxproj -> D:\Programming\SP\lab02\x64\Debug\OS11_02.exe

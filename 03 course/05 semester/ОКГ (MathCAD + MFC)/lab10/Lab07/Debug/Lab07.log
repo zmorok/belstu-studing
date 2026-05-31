@@ -1,0 +1,21 @@
+﻿  main.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+D:\Studying\3 курс\выполненные\ОКГ\lab10\Lab07\LibSurface.h(158,20): warning C4018: <: несоответствие типов со знаком и без знака
+  (компиляция исходного файла "main.cpp")
+  
+D:\Studying\3 курс\выполненные\ОКГ\lab10\Lab07\LibSurface.h(161,21): warning C4018: <: несоответствие типов со знаком и без знака
+  (компиляция исходного файла "main.cpp")
+  
+D:\Studying\3 курс\выполненные\ОКГ\lab10\Lab07\LibSurface.h(224,20): warning C4018: <: несоответствие типов со знаком и без знака
+  (компиляция исходного файла "main.cpp")
+  
+D:\Studying\3 курс\выполненные\ОКГ\lab10\Lab07\LibSurface.h(227,21): warning C4018: <: несоответствие типов со знаком и без знака
+  (компиляция исходного файла "main.cpp")
+  
+D:\Studying\3 курс\выполненные\ОКГ\lab10\Lab07\LibSurface.h(254,20): warning C4018: <: несоответствие типов со знаком и без знака
+  (компиляция исходного файла "main.cpp")
+  
+D:\Studying\3 курс\выполненные\ОКГ\lab10\Lab07\LibSurface.h(257,21): warning C4018: <: несоответствие типов со знаком и без знака
+  (компиляция исходного файла "main.cpp")
+  
+  Lab07.vcxproj -> D:\Studying\3 курс\выполненные\ОКГ\lab10\Debug\Lab07.exe

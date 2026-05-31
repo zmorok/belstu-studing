@@ -1,0 +1,4 @@
+Display.InputDialog Title: $'''Введите имя''' InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> UserInput ButtonPressed=> ButtonPressed
+Display.ShowMessageDialog.ShowMessage Title: $'''ВАШЕ СООБЩЕНИЕ''' Message: $'''Привет, %UserInput%!''' Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed2
+Pdf.ExtractTextFromPDF.ExtractText PDFFile: $'''C:\\Users\\zmorok\\Desktop\\расписание.pdf''' DetectLayout: False ExtractedText=> ExtractedPDFText
+File.WriteText File: $'''C:\\Users\\zmorok\\Desktop\\рпр7\\TextFromPdf.txt''' TextToWrite: ExtractedPDFText AppendNewLine: True IfFileExists: File.IfFileExists.Overwrite Encoding: File.FileEncoding.Unicode

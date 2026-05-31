@@ -1,0 +1,11 @@
+﻿  SetErrorMsgText.cpp
+  ServerT.cpp
+D:\Programming\PSP\lab02\ServerT\ServerT.cpp(87,37): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\PSP\lab02\ServerT\ServerT.cpp(75,20): warning C4101: obuf: неиспользованная локальная переменная
+  SetupConsole.cpp
+  Создание кода
+  149 of 153 functions (97.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  ServerT.vcxproj -> D:\Programming\PSP\lab02\x64\Release\ServerT.exe

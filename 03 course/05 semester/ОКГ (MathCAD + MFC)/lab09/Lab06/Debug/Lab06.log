@@ -1,0 +1,6 @@
+﻿C:\Program Files\Microsoft Visual Studio\2026\Professional\MSBuild\Microsoft\VC\v180\Microsoft.CppBuild.targets(548,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (Lab06.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  CMatrix.cpp
+  main.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  Создание кода...
+  Lab06.vcxproj -> C:\Users\zmorok\Desktop\ОКГ 9\lab9\Debug\Lab09.exe

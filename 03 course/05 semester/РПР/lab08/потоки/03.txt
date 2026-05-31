@@ -1,0 +1,74 @@
+Database.Connect ConnectionString: $'''Provider=SQLOLEDB.1;Persist Security Info=False;User ID=sa;Initial Catalog=Salary;Data Source=localhost;Password=YourStrong!Passw0rd''' Connection=> SQLConnection
+Database.ExecuteSqlStatement.Execute Connection: SQLConnection Statement: $'''select count(*) from Зарплата''' Timeout: 30 Result=> CountAsText
+Text.ToNumber Text: CountAsText Number=> CountOfRows
+IF CountOfRows = 0 THEN
+    Display.ShowMessageDialog.ShowMessage Message: $'''База данных пуста''' Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed
+ELSE
+    Display.ShowMessageDialog.ShowMessage Message: $'''База данных содержит записи. Желаете их удалить?»''' Icon: Display.Icon.None Buttons: Display.Buttons.YesNo DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> DeleteButton
+    IF DeleteButton = $'''\'Yes\'''' THEN
+        Database.ExecuteSqlStatement.Execute Connection: SQLConnection Statement: $'''truncate table Зарплата''' Timeout: 30 Result=> QueryResult
+    END
+END
+Display.ShowMessageDialog.ShowMessage Message: $'''Желаете добавить новые записи?''' Icon: Display.Icon.None Buttons: Display.Buttons.YesNo DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> AddButton
+SET ConfirmButton TO $'''\'ОК\''''
+LOOP WHILE (AddButton) = ($'''Yes''')
+    SET AddBool TO $'''False'''
+    Display.InputDialog InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> Name ButtonPressed=> ConfirmButton
+    IF ConfirmButton = $'''\'OK\'''' THEN
+        SET AddBool TO $'''True'''
+    END
+    Display.InputDialog InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> Dolzhnost ButtonPressed=> ConfirmButton5
+    IF ConfirmButton5 = $'''\'OK\'''' THEN
+        SET AddBool TO $'''True'''
+    END
+    Display.InputDialog InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> Stazh ButtonPressed=> ConfirmButton2
+    IF ConfirmButton2 = $'''\'OK\'''' THEN
+        SET AddBool TO $'''True'''
+    END
+    Display.InputDialog InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> Oklad ButtonPressed=> ConfirmButton3
+    IF ConfirmButton3 = $'''\'OK\'''' THEN
+        SET AddBool TO $'''True'''
+    END
+    Display.InputDialog InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> Premija ButtonPressed=> ConfirmButton4
+    IF ConfirmButton4 = $'''\'OK\'''' THEN
+        SET AddBool TO $'''True'''
+    END
+    SET AddBool TO $'''True'''
+    IF AddBool = $'''True''' THEN
+        Database.ExecuteSqlStatement.Execute Connection: SQLConnection Statement: $'''insert into Зарплата (ФИО, Должность, [Стаж, лет], [Оклад, руб], [Премия, руб])
+             values (\'%Name%\', \'%Dolzhnost%\', %Stazh%, %Oklad%, %Premija%)
+''' Timeout: 30 Result=> QueryResult2
+        Display.ShowMessageDialog.ShowMessage Message: $'''Хотите создать еще одну запись?''' Icon: Display.Icon.None Buttons: Display.Buttons.YesNo DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> AddButton
+        Database.ExecuteSqlStatement.Execute Connection: SQLConnection Statement: $'''select count(*) from Зарплата''' Timeout: 30 Result=> CountAsText
+        Text.ToNumber Text: CountAsText Number=> CountOfRows
+        IF CountOfRows = 0 THEN
+            Display.ShowMessageDialog.ShowMessage Message: $'''База данных пуста''' Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed
+        ELSE
+            Database.ExecuteSqlStatement.Execute Connection: SQLConnection Statement: $'''update Зарплата set [Надбавка за стаж, руб] = 0 where [Стаж, лет] = 0
+update Зарплата set [Надбавка за стаж, руб] = [Оклад, руб] * 0.05 where [Стаж, лет] between 1 and 5
+update Зарплата set [Надбавка за стаж, руб] = [Оклад, руб] * 0.1 where [Стаж, лет] between 6 and 10
+update Зарплата set [Надбавка за стаж, руб] = [Оклад, руб] * 0.15 where [Стаж, лет] between 11 and 15
+update Зарплата set [Надбавка за стаж, руб] = [Оклад, руб] * 0.2 where [Стаж, лет] > 15
+update Зарплата set [Надбавка за стаж, руб] = round([Надбавка за стаж, руб], 2), [Итого, руб] = round(([Оклад, руб] + [Премия, руб] + [Надбавка за стаж, руб]), 2)
+update Зарплата set [Налоги, руб] = round(([Итого, руб] * 0.13) , 2)
+update Зарплата set [Получить, руб] = [Итого, руб] - [Налоги, руб]
+''' Timeout: 30 Result=> QueryResult3
+            Database.ExecuteSqlStatement.Execute Connection: SQLConnection Statement: $'''select * from Зарплата''' Timeout: 30 Result=> Result
+            Display.ShowMessageDialog.ShowMessage Message: $'''Окно заполнено и рассчеты проведены''' Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed2
+            SET Index TO 0
+            LOOP WHILE (Index) < (Result.RowsCount)
+                Display.ShowMessageDialog.ShowMessage Message: $'''ФИО: %Result[Index][0]%
+Должность: %Result[Index][1]%
+Стаж: %Result[Index][2]%
+Оклад: %Result[Index][3]%
+Премия: %Result[Index][4]%
+Надбавка за стаж: %Result[Index][5]%
+Налоги: %Result[Index][7]%
+Итого получено: %Result[Index][8]%
+''' Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed3
+                Variables.IncreaseVariable Value: Index IncrementValue: 1
+            END
+            Database.Close Connection: SQLConnection
+        END
+    END
+END

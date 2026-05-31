@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Открытие",
+  "Type": "App",
+  "Id": "0_VpxhWjIEW6tuoBCQeHpA",
+  "Reference": "6uDfDS-6eUW_nRjm-yxJYA/0_VpxhWjIEW6tuoBCQeHpA",
+  "Created": "2025-10-15T16:00:20.8350305Z",
+  "Updated": "2025-10-15T16:00:20.8350305Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

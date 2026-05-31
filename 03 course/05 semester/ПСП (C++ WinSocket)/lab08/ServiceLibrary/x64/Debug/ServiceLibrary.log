@@ -1,0 +1,10 @@
+﻿  pch.cpp
+  DefineTableService.h
+  dllmain.cpp
+  PrototypeService.cpp
+  Создание кода...
+D:\Programming\PSP\lab08\ServiceLibrary\PrototypeService.h(80,34): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  (compiling source file '/dllmain.cpp')
+  
+     Создается библиотека D:\Programming\PSP\lab08\x64\Debug\ServiceLibrary.lib и объект D:\Programming\PSP\lab08\x64\Debug\ServiceLibrary.exp
+  ServiceLibrary.vcxproj -> D:\Programming\PSP\lab08\x64\Debug\ServiceLibrary.dll

@@ -1,0 +1,10 @@
+LABEL Begin
+Display.ShowMessageDialog.ShowMessage Message: $'''Нажмите Ctrl-Q''' Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed
+MouseAndKeyboard.WaitForShortcutKey.WaitForShortcutKey InputKeys: ['Ctrl+Q'] IndexOfShortcutKeyPressed=> IndexOfShortcutKeyPressed
+DateTime.GetCurrentDateTime.Local DateTimeFormat: DateTime.DateTimeFormat.DateAndTime CurrentDateTime=> CurrentDateTime
+Workstation.TakeScreenshot.TakeScreenshotOfPrimaryScreenAndSaveToFile File: $'''C:\\Users\\zmorok\\Desktop\\рпр8\\%CurrentDateTime.Month%_%CurrentDateTime.Day%_%CurrentDateTime.Hour%_%CurrentDateTime.Second%.jpg''' ImageFormat: System.ImageFormat.Jpg
+System.RunApplication.RunApplication ApplicationPath: $'''mspaint.exe''' CommandLineArguments: $'''%CurrentDateTime.Month%_%CurrentDateTime.Day%_%CurrentDateTime.Hour%_%CurrentDateTime.Second%.jpg''' WorkingDirectory: $'''C:\\Users\\zmorok\\Desktop\\рпр8''' WindowStyle: System.ProcessWindowStyle.Normal ProcessId=> AppProcessId
+Display.InputDialog Message: $'''Продолжать? (1-да 0-нет)''' InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> UserInput ButtonPressed=> ButtonPressed2
+IF UserInput = 1 THEN
+    GOTO Begin
+END

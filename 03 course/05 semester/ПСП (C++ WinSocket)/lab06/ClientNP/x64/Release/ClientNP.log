@@ -1,0 +1,7 @@
+﻿  ClientNP.cpp
+D:\Programming\PSP\lab06\ClientNP\ClientNP.cpp(68,19): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+  All 145 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  ClientNP.vcxproj -> D:\Programming\PSP\lab06\x64\Release\ClientNP.exe

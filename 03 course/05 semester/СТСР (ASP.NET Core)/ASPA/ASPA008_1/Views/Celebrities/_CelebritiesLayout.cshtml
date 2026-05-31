@@ -1,0 +1,30 @@
+﻿﻿@using ASPA008_1.Helpers
+@inject CelebrityTitles titles
+@{
+  
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@titles.Title</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" rel="stylesheet" />
+</head>
+<body>
+    <script src="_framework/aspnetcore-browser-refresh.js"></script>
+    <h1>@titles.Head</h1>
+
+    <div>
+        <a href="/" style="margin-left: 10px;"> Home </a> <a href="/" style="margin-left: 10px;"> Life Events </a>
+    </div>
+
+    <hr />
+    @RenderSection("subhead", false)
+    <div> @RenderBody() </div>
+    @RenderSection("foot", false)
+    <hr />
+
+    &#169; @titles.CopyRight
+    <environment include="Development,Staging"><i>Development</i></environment>
+</body>
+</html>

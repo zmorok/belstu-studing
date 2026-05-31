@@ -1,0 +1,251 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1269,1114" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="484,122" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Безымянный – Блокнот" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,969" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" IsDisplayNameAuto="True" ScopeGuid="64e26af6-95bd-46d0-b3c8-62e4d5a4be3f" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="450,677" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into ''editable text Текстовый…''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,288" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="64e26af6-95bd-46d0-b3c8-62e4d5a4be3f" Text="Текст для лабы" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="8, 51, 1407, 654" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='По горизонтали' cls='Edit' /&gt;&lt;ctrl name='Текстовый редактор' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='По горизонтали' cls='Edit' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;ctrl name='Текстовый редактор' role='editable text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="3054ccfd-3a3c-4b6a-b8e4-e9a15ee16404" InformativeScreenshot="fd22f6f9a7b518499e78b1aba8ee856f.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='Notepad' title='Безымянный – Блокнот' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Формат''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="64e26af6-95bd-46d0-b3c8-62e4d5a4be3f" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="7346cb71-65ca-4d21-b044-fdd578c5749e" CvTextArea="111, 34, 45, 14" CvTextArgument="DopMaT" CvType="Text" DesignTimeRectangle="105, 31, 57, 19" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Приложение' role='menu bar' /&gt;&lt;ctrl name='Формат' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Приложение' role='menu bar' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Формат' role='menu item' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Формат' /&gt;" Guid="9e3ae219-f2f7-4f53-a836-1bd3fadcbf18" InformativeScreenshot="052acacdcff6bddff4db666776cda28b.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='Notepad' title='*Безымянный – Блокнот' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Шрифт...''" HealingAgentBehavior="SameAsCard" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="64e26af6-95bd-46d0-b3c8-62e4d5a4be3f" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="b96b0a40-437d-45a9-a9b0-93061c08124b" CvTextArea="37, 29, 49, 15" CvTextArgument="WpnpT..." CvType="Text" DesignTimeRectangle="3, 25, 201, 22" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Формат' role='popup menu' /&gt;&lt;ctrl automationid='33' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Формат' role='popup menu' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='33' role='menu item' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Шрифт...' /&gt;" Guid="4dd856ea-3be3-4946-8027-c9f1f7397327" InformativeScreenshot="29682c6ca4697b774394d43cc665ae9d.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''полужирный курсив''" HealingAgentBehavior="SameAsCard" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="64e26af6-95bd-46d0-b3c8-62e4d5a4be3f" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="ed00be42-2dc7-4e87-b336-95a174388cba" CvTextArea="209, 144, 138, 16" CvTextArgument="nonyxupH6ŭ Kypcu6" CvType="Text" DesignTimeRectangle="210, 142, 196, 19" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;wnd ctrlid='1137' /&gt;&lt;wnd ctrlid='1000' /&gt;&lt;ctrl name='Начертание:' role='list' /&gt;&lt;ctrl name='полужирный курсив' role='list item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1137' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1000' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;ctrl name='Начертание:' role='list' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='полужирный курсив' role='list item' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='полужирный курсив' /&gt;" Guid="a8f9e9d3-f190-4e46-9edc-10249c23189d" InformativeScreenshot="ce8d43bfedf7bc5d8f25c4db7af23ce0.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32770' title='Шрифт' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''полужирный курсив''" HealingAgentBehavior="SameAsCard" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="64e26af6-95bd-46d0-b3c8-62e4d5a4be3f" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="ed00be42-2dc7-4e87-b336-95a174388cba" CvTextArea="209, 144, 138, 16" CvTextArgument="nonyxupH6ŭ Kypcu6" CvType="Text" DesignTimeRectangle="210, 142, 196, 19" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;wnd ctrlid='1137' /&gt;&lt;wnd ctrlid='1000' /&gt;&lt;ctrl name='Начертание:' role='list' /&gt;&lt;ctrl name='полужирный курсив' role='list item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1137' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1000' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;ctrl name='Начертание:' role='list' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='полужирный курсив' role='list item' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='полужирный курсив' /&gt;" Guid="7c8c0129-fa51-4077-b524-932c3e75a03f" InformativeScreenshot="ce8d43bfedf7bc5d8f25c4db7af23ce0.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32770' title='Шрифт' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''ОК''" HealingAgentBehavior="SameAsCard" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="64e26af6-95bd-46d0-b3c8-62e4d5a4be3f" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="ed00be42-2dc7-4e87-b336-95a174388cba" CvElementArea="343, 435, 78, 25" CvTextArea="372, 440, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="342, 434, 79, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='ОК' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='ОК' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' matching:title='fuzzy' fuzzylevel:title='0.0' check:text='ОК' /&gt;" Guid="79882068-8018-4b5d-9d47-392bc210fb79" InformativeScreenshot="5ace21f391f2162b64f776fd58b1eaff.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32770' title='Шрифт' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Закрыть''" HealingAgentBehavior="SameAsCard" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="64e26af6-95bd-46d0-b3c8-62e4d5a4be3f" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="7346cb71-65ca-4d21-b044-fdd578c5749e" CvElementArea="1400, 5, 18, 18" CvType="CloseButton" DesignTimeRectangle="1386, 1, 47, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Закрыть' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Закрыть' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Закрыть' /&gt;" Guid="ba2fb6f2-bd8b-4e76-952e-418916dad862" InformativeScreenshot="27fb05f72604e8b43259cef3a6598206.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='Notepad' title='*Безымянный – Блокнот' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="156, 156, 1440, 753" FilePath="C:\Windows\System32\notepad.exe" IconBase64="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" InformativeScreenshot="fce364fc111f705033d16116bb87a0d5.png" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='Безымянный – Блокнот' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,6 @@
+{
+  "Name": "04-03-OrderWithModule",
+  "ProjectType": "Process",
+  "Description": "Пустой процесс",
+  "MainFile": "Main.xaml"
+}

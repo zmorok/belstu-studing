@@ -1,0 +1,16 @@
+﻿﻿@using DAL_Celebrity_MSSQL;
+@using System.Globalization;
+@using ASPA008_1.Helpers;
+@model ASPA008_1.Models.NewHumanFormModel
+
+@{
+    Layout = "_CelebritiesLayout";
+}
+
+@section subhead {}
+<div style="display:flex;">
+    <div class="celebrity-box" style="background-color: #c59d67">
+        <partial name="_InFormNewCelebrity" />
+    </div>
+</div>
+@section foot {}

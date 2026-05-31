@@ -1,0 +1,10 @@
+﻿  Lab_06_bar.c
+D:\Studying\3 курс\выполненные\ОС\lab06\lab06_win\Lab_06_bar\Lab_06_bar.c(151,41): warning C4047: функция: "SIZE_T" отличается по уровням косвенного обращения от "void *"
+D:\Studying\3 курс\выполненные\ОС\lab06\lab06_win\Lab_06_bar\Lab_06_bar.c(151,41): warning C4024: CreateThread: различные типы для формального и фактического параметров 2
+D:\Studying\3 курс\выполненные\ОС\lab06\lab06_win\Lab_06_bar\Lab_06_bar.c(151,73): warning C4047: функция: "DWORD" отличается по уровням косвенного обращения от "void *"
+D:\Studying\3 курс\выполненные\ОС\lab06\lab06_win\Lab_06_bar\Lab_06_bar.c(151,73): warning C4024: CreateThread: различные типы для формального и фактического параметров 5
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 10 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  Lab_06_bar.vcxproj -> D:\Studying\3 курс\выполненные\ОС\lab06\lab06_win\x64\Release\Lab_06_bar.exe

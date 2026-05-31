@@ -1,0 +1,9 @@
+﻿  ClientS.cpp
+D:\Programming\PSP\lab05\ClientS\ClientS.cpp(128,40): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  SetErrorMsgText.cpp
+  SetupConsole.cpp
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 158 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  ClientS.vcxproj -> D:\Programming\PSP\lab05\x64\Release\ClientS.exe

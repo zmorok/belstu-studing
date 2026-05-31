@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Выполнить",
+  "Type": "Screen",
+  "Id": "OvaSa86URUKRPYYJEzy4vg",
+  "Reference": "6uDfDS-6eUW_nRjm-yxJYA/OvaSa86URUKRPYYJEzy4vg",
+  "ParentRef": "6uDfDS-6eUW_nRjm-yxJYA/O6d87SJJS0qttOWiLZqQTA",
+  "Created": "2025-10-15T15:58:22.0461289Z",
+  "Updated": "2025-10-15T15:58:22.0461289Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Выполнить",
+  "Type": "App",
+  "Id": "B0WBmtWHnEKFezAhtPjUNw",
+  "Reference": "XMS2sTrhjEiwRvL8DA0Taw/B0WBmtWHnEKFezAhtPjUNw",
+  "Created": "2025-10-01T14:59:25.7466916Z",
+  "Updated": "2025-10-01T14:59:25.7466916Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,21 @@
+﻿@page
+@model ASPA007_1.Pages.CelebritiesModel
+@{
+    ViewData["Title"] = "Celebrities";
+    int i = 0;
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="wrapper" onclick="location.href='/0'">
+    <img src="@($"{Model.PhotosRequestPath}/brilliant.jpg")" alt="@Model.Photos[0]" />
+</div>
+
+@foreach (var c in Model.Celebrities)
+{
+    <div class="wrapper" onclick="location.href='/Celebrity/@c.Id'">
+        <img src="@($"{Model.PhotosRequestPath}/{c.ReqPhotoPath}")" alt="@c.FullName" />
+    </div>
+}
+
+<hr />

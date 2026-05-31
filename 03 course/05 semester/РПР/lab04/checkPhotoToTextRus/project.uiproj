@@ -1,0 +1,6 @@
+{
+  "Name": "checkPhotoToTextRus",
+  "ProjectType": "Process",
+  "Description": "Пустой процесс",
+  "MainFile": "Main.xaml"
+}

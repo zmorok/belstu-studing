@@ -1,0 +1,6 @@
+﻿  ClientB.cpp
+D:\Programming\PSP\lab04\ClientB\ClientB.cpp(121,42): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  SetErrorMsgText.cpp
+  SetupConsole.cpp
+  Создание кода...
+  ClientB.vcxproj -> D:\Programming\PSP\lab04\x64\Debug\ClientB.exe

@@ -1,0 +1,117 @@
+﻿  pch.cpp
+  dllmain.cpp
+  OS11_HTAPI.cpp
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(34,35): warning C4091: __declspec(dllimport): пропускается слева от "HT::HTHANDLE", когда ни одна переменная не объявлена
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(55,35): warning C4091: __declspec(dllimport): пропускается слева от "HT::Element", когда ни одна переменная не объявлена
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(63,11): warning C4273: HT::HTHANDLE::HTHANDLE: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(36,3):
+      см. предыдущее определение "HT::HTHANDLE::HTHANDLE"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(81,11): warning C4273: HT::HTHANDLE::HTHANDLE: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(37,3):
+      см. предыдущее определение "HT::HTHANDLE::HTHANDLE"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(102,10): warning C4273: HT::Element::Element: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(57,3):
+      см. предыдущее определение "HT::Element::Element"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(110,10): warning C4273: HT::Element::Element: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(58,3):
+      см. предыдущее определение "HT::Element::Element"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(118,10): warning C4273: HT::Element::Element: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(59,3):
+      см. предыдущее определение "HT::Element::Element"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(127,10): warning C4273: HT::Element::Element: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(60,3):
+      см. предыдущее определение "HT::Element::Element"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(137,15): warning C4273: HT::Create: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(67,39):
+      см. предыдущее определение "HT::Create"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(152,9): warning C4297: HT::Create: ожидается, что функция не будет выдавать исключения, но она это делает
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(152,9):
+      для функции указан атрибут __declspec(nothrow), throw(), noexcept(true) или noexcept
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(192,9): warning C4297: HT::Create: ожидается, что функция не будет выдавать исключения, но она это делает
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(192,9):
+      для функции указан атрибут __declspec(nothrow), throw(), noexcept(true) или noexcept
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(224,9): warning C4297: HT::Create: ожидается, что функция не будет выдавать исключения, но она это делает
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(224,9):
+      для функции указан атрибут __declspec(nothrow), throw(), noexcept(true) или noexcept
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(231,15): warning C4273: HT::Open: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(76,39):
+      см. предыдущее определение "HT::Open"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(322,10): warning C4273: HT::Close: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(91,33):
+      см. предыдущее определение "HT::Close"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(349,15): warning C4273: HT::OpenExistHt: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(81,39):
+      см. предыдущее определение "HT::OpenExistHt"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(409,10): warning C4273: HT::CloseExistHt: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(96,33):
+      см. предыдущее определение "HT::CloseExistHt"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(415,11): warning C4273: HT::GetLastErrorHt: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(129,34):
+      см. предыдущее определение "HT::GetLastErrorHt"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(421,10): warning C4273: HT::print: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(134,33):
+      см. предыдущее определение "HT::print"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(438,10): warning C4273: HT::Insert: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(101,33):
+      см. предыдущее определение "HT::Insert"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(559,18): warning C4273: HT::Get: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(114,38):
+      см. предыдущее определение "HT::Get"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(627,10): warning C4273: HT::Delete: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(108,33):
+      см. предыдущее определение "HT::Delete"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(705,10): warning C4273: HT::Update: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(121,33):
+      см. предыдущее определение "HT::Update"
+  
+D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.cpp(793,10): warning C4273: HT::Snap: несовместимое связывание dll
+  (компиляция исходного файла "/OS11_HTAPI.cpp")
+      D:\Programming\SP\lab02\OS11_HTAPI\OS11_HTAPI.h(86,33):
+      см. предыдущее определение "HT::Snap"
+  
+  Создание кода...
+     Создается библиотека D:\Programming\SP\lab02\x64\Debug\OS11_HTAPI.lib и объект D:\Programming\SP\lab02\x64\Debug\OS11_HTAPI.exp
+  OS11_HTAPI.vcxproj -> D:\Programming\SP\lab02\x64\Debug\OS11_HTAPI.dll

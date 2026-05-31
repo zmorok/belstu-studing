@@ -1,0 +1,6 @@
+{
+  "Name": "04-04-01-LibraryFirst",
+  "ProjectType": "Library",
+  "Description": "Пустая библиотека",
+  "MainFile": "NewActivity.xaml"
+}

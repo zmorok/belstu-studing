@@ -1,0 +1,8 @@
+Folder.GetFiles Folder: $'''C:\\Users\\zmorok\\Desktop\\рпр7\\Resumes''' FileFilter: $'''*.txt''' IncludeSubfolders: False FailOnAccessDenied: True SortBy1: Folder.SortBy.NoSort SortDescending1: False SortBy2: Folder.SortBy.NoSort SortDescending2: False SortBy3: Folder.SortBy.NoSort SortDescending3: False Files=> Files
+Variables.CreateNewList List=> List
+LOOP FOREACH CurrentItem IN Files
+    File.ReadTextFromFile.ReadText File: CurrentItem Encoding: File.TextFileEncoding.UTF8 Content=> FileContents
+    Text.RecognizeEntitiesInText Text: FileContents Mode: Text.RecognizerMode.Email Language: Text.RecognizerLanguage.English RecognizedEntities=> RecognizedEntities
+    Variables.AddItemToList Item: RecognizedEntities List: List
+END
+Display.ShowMessageDialog.ShowMessage Title: $'''Почты''' Message: List Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed

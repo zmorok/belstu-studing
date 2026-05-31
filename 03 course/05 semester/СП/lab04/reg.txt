@@ -1,0 +1,11 @@
+regsvr32 "D:\Programming\SP\lab04\x64\Debug\OS13_HTCOM.dll"
+regsvr32 /u "D:\Programming\SP\lab04\x64\Debug\OS13_HTCOM.dll"
+
+
+// {C3F44A1D-2F45-47C2-9AE3-2B6FBBE00374}
+const GUID CLSID_OS13 =
+{ 0xc3f44a1d, 0x2f45, 0x47c2, { 0x9a, 0xe3, 0x2b, 0x6f, 0xbb, 0xe0, 0x3, 0x74 } };
+
+// {0C6EEF7E-2EE4-4E16-B4F0-17420992EC7A}
+const GUID IID_IHTStorage =
+{ 0xc6eef7e, 0x2ee4, 0x4e16, { 0xb4, 0xf0, 0x17, 0x42, 0x9, 0x92, 0xec, 0x7a } };
